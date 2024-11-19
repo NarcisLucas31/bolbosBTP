@@ -1,0 +1,119 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f9f9f9;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+.secondary-image {
+  position: absolute;
+  top: 50px;
+  right: -200px;
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  opacity: 0.6;
+  z-index: 1;
+  transform: rotate(-5deg);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-overlay {
+  position: relative;
+  background: rgba(50, 50, 50, 0.9);
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin-top: -50px;
+  z-index: 3;
+}
+
+.hero-overlay h1 {
+  font-size: 2rem;
+  color: #f9c947;
+  margin: 0 0 10px;
+}
+
+.hero-overlay p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.contact-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #f9c947;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #d8a536;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .secondary-image {
+    top: 10px;
+    right: -50px;
+    width: 120px;
+    transform: rotate(0deg);
+  }
+
+  .main-image {
+    max-width: 100%;
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-overlay p {
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    padding: 120px 10px;
+  }
+}

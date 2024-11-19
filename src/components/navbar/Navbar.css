@@ -1,0 +1,88 @@
+nav {
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 4px 0;
+  position: fixed;
+  top: 30;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 50px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+
+nav ul li a {
+  text-decoration: none; /* Enlève le soulignement par défaut des liens */
+  position: relative; /* Nécessaire pour positionner la ligne */
+}
+
+nav ul li a.active {
+  font-weight: bold; /* Optionnel, pour un effet supplémentaire */
+}
+
+nav ul li a.active::after {
+  content: ""; /* Créer un pseudo-élément */
+  position: absolute;
+  bottom: -5px; /* Positionner la ligne juste sous le texte */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Hauteur de la ligne */
+  background-color: #000; /* Couleur de la ligne */
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 140px;
+  }
+  nav ul li {
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width: 840px) {
+  nav {
+    padding: 15px 0;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background: #96562e;
+    z-index: -1;
+    width: 200px;
+    padding-top: 70px;
+    transition: 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px 40px;
+  }
+  .menu-icon {
+    display: block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .hide-mobile-menu {
+    right: -200px;
+  }
+}

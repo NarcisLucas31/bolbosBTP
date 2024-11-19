@@ -1,0 +1,78 @@
+/* Style général pour le pied de page */
+.footer {
+  background-color: #000; /* Fond noir */
+  color: #fff; /* Texte blanc */
+  padding: 20px; /* Espacement interne */
+  width: 100%; /* Prend toute la largeur de la fenêtre */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+  text-align: center; /* Aligne le texte au centre */
+  position: relative;
+}
+
+/* Conteneur principal */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px; /* Largeur maximale du contenu */
+  margin: 0 auto; /* Centrer le conteneur horizontalement */
+  flex-wrap: wrap; /* Permet de passer sur plusieurs lignes si nécessaire */
+  box-sizing: border-box; /* Gère mieux les marges internes */
+}
+
+/* Section de gauche (Renseignements utiles) */
+.footer-section {
+  flex: 1;
+  margin: 10px; /* Espacement entre les sections */
+  min-width: 250px; /* Largeur minimale pour garder la structure */
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.footer-section img {
+  width: 20px; /* Taille de l'image */
+  height: 20px;
+  margin-right: 10px; /* Espace entre l'image et le texte */
+}
+
+/* Section de droite (Avis) */
+.feedback-box {
+  width: 100px;
+  height: 50px;
+  background-color: #fff; /* Fond blanc */
+  border-radius: 25px; /* Forme ovale */
+  margin: 20px auto; /* Centrer la boîte ovale */
+}
+
+/* Partie légale */
+.footer-legal {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-top: 1px solid #444; /* Ligne de séparation discrète */
+  padding-top: 10px;
+}
+
+/* Responsivité pour petits écrans */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Les sections s'empilent */
+    align-items: center; /* Centre les sections */
+  }
+
+  .footer-section {
+    text-align: center;
+    margin: 20px 0; /* Espacement entre les sections sur mobile */
+  }
+}

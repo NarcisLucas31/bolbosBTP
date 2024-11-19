@@ -1,0 +1,63 @@
+.apropos {
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.apropos-gauche {
+  flex-basis: 40%;
+  position: relative;
+}
+
+.apropos-droite {
+  flex-basis: 56%;
+}
+
+.apropos-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/*
+.play-img {
+  width: 60px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+*/
+
+.apropos h3 {
+  font-weight: 600;
+  font-weight: 16px;
+  color: brown;
+}
+
+.apropos h2 {
+  font-size: 35px;
+  color: brown;
+  margin: 10px 0;
+  max-width: 400px;
+}
+
+.apropos p {
+  color: black;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 800px) {
+  .apropos {
+    flex-direction: column;
+  }
+  .apropos-gauche {
+    flex-basis: 90%;
+    margin: 20px;
+    order: 2;
+  }
+  .apropos-droite {
+    flex-basis: 90%;
+  }
+}
