@@ -29,7 +29,7 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="/travauxInt" activeClassName="active">
-            Travaux Interiur
+            Travaux Intérieur
           </NavLink>
         </li>
         <li>
