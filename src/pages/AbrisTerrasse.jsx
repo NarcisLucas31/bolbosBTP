@@ -14,7 +14,7 @@ const AbrisTerrasse = () => {
       <Avantnav />
       <Navbar />
       <Heroback
-        imageSrc={AbrisTerraseImg}
+        imageSrc={abrisTerraseImg}
         text="Optez pour l'installation de menuiseries extérieures, alliant style et performance"
         titre=""
       />
