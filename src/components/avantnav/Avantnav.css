@@ -2,24 +2,29 @@
 .avantnav {
   background: linear-gradient(to right, #b08467, #96562e);
   display: flex;
-  justify-content: flex-end;
-  padding: 10px;
-  gap: 10px;
+  justify-content: right; /* Centre les boutons horizontalement */
+  align-items: center; /* Centre verticalement les boutons */
+  padding: 5px 10px; /* Réduction du padding vertical */
+  gap: 15px; /* Espacement entre les boutons */
   position: fixed; /* Fixe Avantnav en haut de la page */
   top: 0; /* Place Avantnav au tout début de la fenêtre */
   width: 100%;
   z-index: 10;
+  padding-right: 80px;
 }
 
 .avantnav-button {
   background: white;
   color: black;
   border: 2px solid black;
-  padding: 5px 15px;
+  padding: 8px 20px;
   border-radius: 15px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 16px;
+  width: 180px; /* Largeur fixe pour que tous les boutons aient la même taille */
+  text-align: center; /* Centre le texte à l'intérieur */
 }
 
 .avantnav-button:hover {

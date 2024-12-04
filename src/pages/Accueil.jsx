@@ -3,7 +3,6 @@ import Navbar from "../components/navbar/Navbar";
 import Hero from "../components/hero/Hero";
 import Services from "../components/services/Services";
 import Titre from "../components/titre/Titre";
-import Apropos from "../components/apropos/Apropos";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Doubleimage from "../components/doubleimage/Doubleimage";
@@ -18,11 +17,10 @@ const Accueil = () => {
       <Hero />
       <div className="container">
         <Titre
-          subTitre="Tout votre aménagement, dedans comme dehors."
-          titre=""
+          subTitre=""
+          titre="Tout votre aménagement, dedans comme dehors."
         />
         <Services />
-        <Apropos />
         <Doubleimage />
         <Imagegauche />
         <Titre subTitre="Contactez nous" titre="Venez" />
