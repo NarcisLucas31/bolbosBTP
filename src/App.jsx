@@ -4,6 +4,14 @@ import Accueil from "./pages/Accueil";
 import Menuiserie from "./pages/Menuiserie";
 import TravauxInt from "./pages/TravauxInt";
 import TravauxExt from "./pages/TravauxExt";
+import Cuisine from "./pages/Cuisine";
+import AbrisTerrasse from "./pages/AbrisTerrasse";
+import Dressing from "./pages/Dressing";
+import HabillageSol from "./pages/HabillageSol";
+import MenuiserieExt from "./pages/MenuiserieExt";
+import RevetementSol from "./pages/RevetementSol";
+import RevetementMurs from "./pages/RevetementMurs";
+import SalleDeBain from "./pages/SalleDeBain";
 import Mentionslegales from "./pages/Mentionslegales";
 
 const App = () => {
@@ -15,6 +23,18 @@ const App = () => {
           <Route path="/" element={<Accueil />} />
           <Route path="/menuiserie" element={<Menuiserie />} />
           <Route path="/travauxInt" element={<TravauxInt />} />
+          <Route path="/travauxExt" element={<TravauxExt />} />
+          <Route path="/menuiserie/menuiserieExt" element={<MenuiserieExt />} />
+          <Route path="/menuiserie/dressing" element={<Dressing />} />
+          <Route path="/menuiserie/cuisine" element={<Cuisine />} />
+          <Route path="/travauxInt/salleDeBain" element={<SalleDeBain />} />
+          <Route
+            path="/travauxInt/revetementMurs"
+            element={<RevetementMurs />}
+          />
+          <Route path="/travauxInt/revetementSol" element={<RevetementSol />} />
+          <Route path="/travauxExt/abrisTerrasse" element={<AbrisTerrasse />} />
+          <Route path="/travauxExt/habillageSol" element={<HabillageSol />} />
           <Route path="/travauxExt" element={<TravauxExt />} />
           <Route path="/mentionslegales" element={<Mentionslegales />} />
         </Routes>

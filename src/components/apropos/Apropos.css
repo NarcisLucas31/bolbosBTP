@@ -20,25 +20,9 @@
   border-radius: 10px;
 }
 
-/*
-.play-img {
-  width: 60px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-*/
-
-.apropos h3 {
-  font-weight: 600;
-  font-weight: 16px;
-  color: brown;
-}
-
 .apropos h2 {
   font-size: 35px;
-  color: brown;
+  color: black;
   margin: 10px 0;
   max-width: 400px;
 }

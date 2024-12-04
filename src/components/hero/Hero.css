@@ -53,7 +53,7 @@
 
 .hero-overlay {
   position: relative;
-  background: rgba(50, 50, 50, 0.9);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 20px 30px;
   border-radius: 10px;

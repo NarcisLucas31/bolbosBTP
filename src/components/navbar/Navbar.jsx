@@ -71,10 +71,10 @@ const Navbar = () => {
             className={`submenu ${submenuVisible.travauxInt ? "visible" : ""}`}
           >
             <li>
-              <NavLink to="/travauxInt/revêtementSol">Revêtement sol</NavLink>
+              <NavLink to="/travauxInt/revetementSol">Revêtement sol</NavLink>
             </li>
             <li>
-              <NavLink to="/travauxInt/revêtementMurs">
+              <NavLink to="/travauxInt/revetementMurs">
                 Revêtement muraux
               </NavLink>
             </li>
