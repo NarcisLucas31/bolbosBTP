@@ -1,0 +1,49 @@
+.heroback-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* L'image prend toute la hauteur de l'écran */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.heroback-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* S'assure que l'image couvre tout l'écran sans déformation */
+  filter: brightness(0.7); /* Applique un effet sombre à l'image */
+  z-index: 1; /* Place l'image derrière le texte */
+}
+
+.heroback-container .hero-overlay {
+  position: relative;
+  background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent noir */
+  text-align: center;
+  z-index: 2; /* Place le texte au-dessus de l'image */
+}
+
+/* -------- Styles pour écrans de téléphone -------- */
+@media (max-width: 768px) {
+  .hero-overlay {
+    padding: 20px 15px;
+    border-radius: 8px;
+    max-width: 90%; /* Réduit la largeur maximale pour s'adapter à l'écran */
+  }
+
+  .hero-overlay h1 {
+    font-size: 1.8rem; /* Taille du titre réduite */
+  }
+
+  .hero-overlay p {
+    font-size: 1rem; /* Taille du texte réduite */
+  }
+
+  .contact-button {
+    padding: 8px 16px; /* Taille du bouton ajustée */
+    font-size: 0.9rem;
+  }
+}
