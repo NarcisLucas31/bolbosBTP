@@ -109,39 +109,89 @@ nav ul li a:hover::after {
 }
 
 @media (max-width: 1000px) {
-  .logo {
-    width: 140px;
-  }
   nav ul li {
     margin: 10px 15px;
   }
 }
 
-@media (max-width: 840px) {
-  nav {
-    padding: 15px 0;
-  }
+@media (max-width: 740px) {
   nav ul {
     position: fixed;
     top: 0;
-    right: 0px;
+    right: 0;
     bottom: 0;
     background: #96562e;
-    z-index: -1;
+    z-index: 10;
     width: 200px;
     padding-top: 70px;
     transition: 0.5s;
   }
+
+  /* Affichage du logo au-dessus du menu sur mobile */
+  .logo {
+    display: block;
+    width: 80px;
+    height: 80px;
+  }
+
   nav ul li {
     display: block;
-    margin: 25px 40px;
+    margin: 25px 30px;
   }
+
   .menu-icon {
     display: block;
     width: 30px;
     cursor: pointer;
+    position: absolute;
+    top: 30px; /* Ajustez pour que l'icône ne soit pas trop proche du bord */
+    right: 30px; /* Positionnez-le à gauche du menu */
+    z-index: 20;
   }
+
   .hide-mobile-menu {
     right: -200px;
+  }
+
+  /* Garde l'effet de survol pour le menu */
+  nav ul li a:hover {
+    color: #000000;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    background-color: #96562e;
+    transition: width 0.3s ease;
+  }
+
+  /* Sous-menu visible sur mobile au survol */
+  .submenu {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    display: none;
+    padding: 0;
+    background: transparent;
+  }
+
+  nav ul li:hover .submenu {
+    display: block;
+    position: relative;
+  }
+
+  .submenu li {
+    margin-left: 0;
+    transform: translateX(0);
+  }
+
+  .submenu.visible {
+    display: block;
   }
 }
