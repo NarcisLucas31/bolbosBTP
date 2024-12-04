@@ -6,15 +6,20 @@
   justify-content: space-between;
 }
 
-.service img {
-  width: 100%;
-  border-radius: 10px;
-  display: block;
-}
-
 .service {
   flex-basis: 31%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service img {
+  width: 100%;
+  height: 300px; /* Définit une hauteur fixe pour toutes les images */
+  object-fit: cover; /* Recadre l'image sans la déformer */
+  border-radius: 10px;
+  display: block;
 }
 
 .caption {
@@ -32,7 +37,7 @@
   color: white;
   cursor: pointer;
   opacity: 0;
-  padding-top: 70%;
+  padding-top: 70%; /* Gère l'espace vertical sur hover */
   transition: 0.4s;
 }
 

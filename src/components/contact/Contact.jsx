@@ -1,9 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import msg_img from "../../assets/message.png";
-import tel_img from "../../assets/tel.png";
-import mail_img from "../../assets/mail.png";
-import adresse_img from "../../assets/adresse.png";
 import fleche from "../../assets/fleche-droite.png";
 
 const Contact = () => {
@@ -14,7 +11,7 @@ const Contact = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "4289354b-5aeb-4db7-97c3-el0fe3abfc2b");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -44,20 +41,6 @@ const Contact = () => {
           cumque necessitatibus sapiente consectetur accusantium fugit incidunt
           iste, suscipit ut soluta. Ab!
         </p>
-        <ul>
-          <li>
-            <img src={tel_img} alt="" />
-            aaa@gmail.com
-          </li>
-          <li>
-            <img src={mail_img} alt="" />
-            07 77 77 77 78
-          </li>
-          <li>
-            <img src={adresse_img} alt="" />
-            02 Nogent
-          </li>
-        </ul>
       </div>
       <div className="contact-col">
         <form onSubmit={onSubmit}>
