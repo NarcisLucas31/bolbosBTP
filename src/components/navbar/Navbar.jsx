@@ -47,13 +47,15 @@ const Navbar = () => {
             className={`submenu ${submenuVisible.menuiserie ? "visible" : ""}`}
           >
             <li>
-              <NavLink to="/menuiserie/bois">Bois</NavLink>
+              <NavLink to="/menuiserie/menuiserieExt">
+                Pose menuiserie extérieures
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/menuiserie/aluminium">Aluminium</NavLink>
+              <NavLink to="/menuiserie/dressing">Dressing sur mesure</NavLink>
             </li>
             <li>
-              <NavLink to="/menuiserie/pvc">PVC</NavLink>
+              <NavLink to="/menuiserie/cuisine">Cuisine sur mesure</NavLink>
             </li>
           </ul>
         </li>
@@ -69,13 +71,15 @@ const Navbar = () => {
             className={`submenu ${submenuVisible.travauxInt ? "visible" : ""}`}
           >
             <li>
-              <NavLink to="/travauxInt/peinture">Peinture</NavLink>
+              <NavLink to="/travauxInt/revêtementSol">Revêtement sol</NavLink>
             </li>
             <li>
-              <NavLink to="/travauxInt/sols">Revêtement de Sols</NavLink>
+              <NavLink to="/travauxInt/revêtementMurs">
+                Revêtement muraux
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/travauxInt/murs">Aménagement des Murs</NavLink>
+              <NavLink to="/travauxInt/salleDeBain">Salle de bain</NavLink>
             </li>
           </ul>
         </li>
@@ -91,13 +95,13 @@ const Navbar = () => {
             className={`submenu ${submenuVisible.travauxExt ? "visible" : ""}`}
           >
             <li>
-              <NavLink to="/travauxExt/jardin">Jardin</NavLink>
+              <NavLink to="/travauxExt/habillageSol">Habillage sol</NavLink>
             </li>
             <li>
-              <NavLink to="/travauxExt/terrasse">Terrasse</NavLink>
+              <NavLink to="/travauxExt/abrisTerrasse">Abris / Terrasse</NavLink>
             </li>
             <li>
-              <NavLink to="/travauxExt/facade">Façade</NavLink>
+              <NavLink to="/travauxExt/facade">??</NavLink>
             </li>
           </ul>
         </li>

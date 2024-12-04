@@ -2,17 +2,18 @@
 .avantnav {
   background: linear-gradient(to right, #b08467, #96562e);
   display: flex;
-  justify-content: right; /* Centre les boutons horizontalement */
-  align-items: center; /* Centre verticalement les boutons */
-  padding: 5px 10px; /* Réduction du padding vertical */
-  gap: 15px; /* Espacement entre les boutons */
-  position: fixed; /* Fixe Avantnav en haut de la page */
-  top: 0; /* Place Avantnav au tout début de la fenêtre */
+  justify-content: right;
+  align-items: center;
+  padding: 7px 10px;
+  gap: 15px;
+  position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10;
-  padding-right: 80px;
+  padding-right: 80px; /* Décale les boutons vers la gauche */
 }
 
+/* Boutons */
 .avantnav-button {
   background: white;
   color: black;
@@ -23,10 +24,29 @@
   cursor: pointer;
   transition: 0.3s;
   font-size: 16px;
-  width: 180px; /* Largeur fixe pour que tous les boutons aient la même taille */
-  text-align: center; /* Centre le texte à l'intérieur */
+  width: 180px; /* Taille fixe pour les boutons */
+  text-align: center;
 }
 
 .avantnav-button:hover {
   background: #ecdede;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .avantnav {
+    justify-content: center; /* Centre les boutons sur les écrans moyens/petits */
+    padding-right: 0;
+  }
+
+  .avantnav-button {
+    width: 150px; /* Réduit la largeur des boutons sur les petits écrans */
+    font-size: 14px; /* Réduit légèrement la taille du texte */
+  }
+}
+
+@media (max-width: 480px) {
+  .avantnav-button:nth-child(2) {
+    display: none;
+  }
 }
