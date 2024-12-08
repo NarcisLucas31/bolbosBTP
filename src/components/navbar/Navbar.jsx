@@ -1,26 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.png";
 import menu from "../../assets/menu.png";
+import scroll from "../../assets/scroll.png";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
-  const [submenuVisible, setSubmenuVisible] = useState({
-    menuiserie: false,
-    travauxInt: false,
-    travauxExt: false,
-  });
+  const [visibleMenu, setVisibleMenu] = useState(null); // Menu actif
+  const [rotatedMenu, setRotatedMenu] = useState(null); // Menu pour la rotation de l'icône
+  const submenuRefs = {
+    menuiserie: useRef(null),
+    travauxInt: useRef(null),
+    travauxExt: useRef(null),
+  };
 
   const toggleMenu = () => {
     setMobileMenu(!mobileMenu);
   };
 
-  const handleSubmenuVisibility = (menu, isVisible) => {
-    setSubmenuVisible((prevState) => ({
-      ...prevState,
-      [menu]: isVisible,
-    }));
+  const toggleSubmenuVisibility = (menu) => {
+    if (visibleMenu === menu) {
+      setVisibleMenu(null); // Fermer si déjà ouvert
+      setRotatedMenu(null); // Réinitialiser la rotation
+    } else {
+      setVisibleMenu(menu); // Ouvrir le sous-menu
+      setRotatedMenu(menu); // Tourner l'icône
+      submenuRefs[menu].current?.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -35,79 +42,96 @@ const Navbar = () => {
             Accueil
           </NavLink>
         </li>
-        <li
-          className="submenu-container"
-          onMouseEnter={() => handleSubmenuVisibility("menuiserie", true)}
-          onMouseLeave={() => handleSubmenuVisibility("menuiserie", false)}
-        >
-          <NavLink to="/menuiserie" activeClassName="active">
-            Menuiserie
-          </NavLink>
+
+        <li className="submenu-container" ref={submenuRefs.menuiserie}>
+          <div onClick={() => toggleSubmenuVisibility("menuiserie")}>
+            <span>Menuiserie</span>
+            <img
+              src={scroll}
+              alt="Scroll Icon"
+              className={`scroll-icon ${
+                rotatedMenu === "menuiserie" ? "rotated" : ""
+              }`}
+            />
+          </div>
           <ul
-            className={`submenu ${submenuVisible.menuiserie ? "visible" : ""}`}
+            className={`submenu ${
+              visibleMenu === "menuiserie" ? "visible" : ""
+            }`}
           >
-            <li>
-              <NavLink to="/menuiserie/menuiserieExt">
-                Pose menuiserie extérieures
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/menuiserie/dressing">Dressing sur mesure</NavLink>
-            </li>
-            <li>
-              <NavLink to="/menuiserie/cuisine">Cuisine sur mesure</NavLink>
-            </li>
+            <NavLink to="/menuiserie/menuiserieExt">
+              <li>Pole menuiserie extérieures</li>
+            </NavLink>
+            <NavLink to="/menuiserie/dressing">
+              <li>Dressing sur mesure</li>
+            </NavLink>
+            <NavLink to="/menuiserie/cuisine">
+              <li>Cuisine sur mesure</li>
+            </NavLink>
           </ul>
         </li>
-        <li
-          className="submenu-container"
-          onMouseEnter={() => handleSubmenuVisibility("travauxInt", true)}
-          onMouseLeave={() => handleSubmenuVisibility("travauxInt", false)}
-        >
-          <NavLink to="/travauxInt" activeClassName="active">
-            Travaux Intérieur
-          </NavLink>
+
+        <li className="submenu-container" ref={submenuRefs.travauxInt}>
+          <div onClick={() => toggleSubmenuVisibility("travauxInt")}>
+            <span>Travaux Intérieur</span>
+            <img
+              src={scroll}
+              alt="Scroll Icon"
+              className={`scroll-icon ${
+                rotatedMenu === "travauxInt" ? "rotated" : ""
+              }`}
+            />
+          </div>
           <ul
-            className={`submenu ${submenuVisible.travauxInt ? "visible" : ""}`}
+            className={`submenu ${
+              visibleMenu === "travauxInt" ? "visible" : ""
+            }`}
           >
-            <li>
-              <NavLink to="/travauxInt/revetementSol">Revêtement sol</NavLink>
-            </li>
-            <li>
-              <NavLink to="/travauxInt/revetementMurs">
-                Revêtement muraux
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/travauxInt/salleDeBain">Salle de bain</NavLink>
-            </li>
+            <NavLink to="/travauxInt/revetementSol">
+              <li>Revêtement sol</li>
+            </NavLink>
+            <NavLink to="/travauxInt/revetementMurs">
+              <li>Revêtement muraux</li>
+            </NavLink>
+            <NavLink to="/travauxInt/salleDeBain">
+              <li>Salle de bain</li>
+            </NavLink>
           </ul>
         </li>
-        <li
-          className="submenu-container"
-          onMouseEnter={() => handleSubmenuVisibility("travauxExt", true)}
-          onMouseLeave={() => handleSubmenuVisibility("travauxExt", false)}
-        >
-          <NavLink to="/travauxExt" activeClassName="active">
-            Travaux Extérieur
-          </NavLink>
+
+        <li className="submenu-container" ref={submenuRefs.travauxExt}>
+          <div onClick={() => toggleSubmenuVisibility("travauxExt")}>
+            <span>Travaux Extérieur</span>
+            <img
+              src={scroll}
+              alt="Scroll Icon"
+              className={`scroll-icon ${
+                rotatedMenu === "travauxExt" ? "rotated" : ""
+              }`}
+            />
+          </div>
           <ul
-            className={`submenu ${submenuVisible.travauxExt ? "visible" : ""}`}
+            className={`submenu ${
+              visibleMenu === "travauxExt" ? "visible" : ""
+            }`}
           >
-            <li>
-              <NavLink to="/travauxExt/habillageSol">Habillage sol</NavLink>
-            </li>
-            <li>
-              <NavLink to="/travauxExt/abrisTerrasse">Abris / Terrasse</NavLink>
-            </li>
-            <li>
-              <NavLink to="/travauxExt/facade">??</NavLink>
-            </li>
+            <NavLink to="/travauxExt/habillageSol">
+              <li>Habillage sol</li>
+            </NavLink>
+            <NavLink to="/travauxExt/abrisTerrasse">
+              <li>Abris / Terrasse</li>
+            </NavLink>
+            <NavLink to="/travauxExt/?">
+              <li>??</li>
+            </NavLink>
           </ul>
         </li>
-        <li>
-          <button className="btn">Contact</button>
-        </li>
+
+        <NavLink to="/contact">
+          <li>
+            <button className="btn">Contact</button>
+          </li>
+        </NavLink>
       </ul>
       <img src={menu} alt="Menu" className="menu-icon" onClick={toggleMenu} />
     </nav>

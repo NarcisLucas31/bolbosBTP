@@ -1,53 +1,49 @@
-.apropos {
+.aproposdroite {
   margin: 100px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 90%;
 }
-
-.apropos-gauche {
-  flex-basis: 40%;
-  position: relative;
-}
-
-.apropos-droite {
+.aproposdroite-gauche {
   flex-basis: 56%;
 }
-
-.apropos-img {
-  width: 100%;
+.aproposdroite-droite {
+  flex-basis: 40%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aproposdroite-img {
   width: 400px; /* Taille plus grande pour la largeur */
   height: 250px; /* Taille plus grande pour la hauteur */
   object-fit: cover; /* Maintient un bon ratio tout en remplissant la zone */
   border-radius: 10px;
 }
-
-.apropos h2 {
+.aproposdroite h2 {
   font-size: 35px;
   color: black;
   margin: 10px 0;
   max-width: 400px;
 }
-
-.apropos p {
+.aproposdroite p {
   color: black;
   margin-bottom: 15px;
 }
-
 @media (max-width: 800px) {
-  .apropos {
+  .aproposdroite {
     flex-direction: column;
   }
-  .apropos-gauche {
+  .aproposdroite-gauche {
+    flex-basis: 90%;
+  }
+  .aproposdroite-droite {
     flex-basis: 90%;
     margin: 20px;
     order: 2;
   }
-  .apropos-droite {
-    flex-basis: 90%;
-  }
-  .apropos-img {
+  .aproposdroite-img {
     width: 300px; /* Taille fixe pour la largeur sur mobile */
     height: 200px; /* Taille fixe pour la hauteur sur mobile */
     object-fit: cover; /* Maintient le contenu adapté */

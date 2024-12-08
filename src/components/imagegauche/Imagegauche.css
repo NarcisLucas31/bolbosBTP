@@ -48,3 +48,27 @@
   color: #666;
   text-align: justify;
 }
+
+@media screen and (max-width: 768px) {
+  .imagegauche {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .image-gauche {
+    margin-bottom: 20px; /* Ajout d'un espace entre l'image et le texte */
+    width: 100%;
+  }
+  .apropos-img {
+    width: 90%; /* Réduction de la largeur de l'image */
+    max-width: 400px; /* Limite de taille maximale */
+  }
+  .texte-droite {
+    padding-left: 0;
+  }
+  .texte-droite h3,
+  .texte-droite h2,
+  .texte-droite p {
+    text-align: center;
+  }
+}

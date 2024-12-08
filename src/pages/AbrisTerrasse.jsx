@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "../components/navbar/Navbar";
 import Heroback from "../components/heroback/Heroback";
 import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
@@ -15,7 +13,7 @@ const AbrisTerrasse = () => {
       <Navbar />
       <Heroback
         imageSrc={abrisTerraseImg}
-        text="Optez pour l'installation de menuiseries extérieures, alliant style et performance"
+        text="Abris et terrasses sur mesure, pour un extérieur unique et personnalisé."
         titre=""
       />
       <Apropos
