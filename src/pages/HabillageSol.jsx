@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import Titre from "../components/titre/Titre";
 import Footer from "../components/footer/Footer";
 import Apropos from "../components/apropos/Apropos";
 import Aproposdroite from "../components/aproposdroite/Aporposdroite";

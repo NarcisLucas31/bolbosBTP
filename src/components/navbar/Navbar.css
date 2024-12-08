@@ -108,6 +108,44 @@ nav ul li a:hover::after {
   opacity: 1; /* Complètement visible */
 }
 
+/* Icône de défilement */
+.scroll-icon {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.submenu-container div {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.submenu-container div:hover {
+  color: #000000; /* Change la couleur sur le survol */
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.submenu-container div:hover ::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #96562e; /* Ligne colorée sous le lien */
+  transition: width 0.3s ease;
+}
+
+.scroll-icon.rotated {
+  transform: rotate(180deg); /* Rotation à 180° lors du clic */
+}
+
 @media (max-width: 1000px) {
   nav ul li {
     margin: 10px 15px;
@@ -157,7 +195,6 @@ nav ul li a:hover::after {
   nav ul li a:hover {
     color: #000000;
     font-weight: bold;
-    transition: color 0.3s ease;
   }
 
   nav ul li a:hover::after {
