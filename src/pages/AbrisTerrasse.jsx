@@ -3,7 +3,7 @@ import Navbar from "../components/navbar/Navbar";
 import Heroback from "../components/heroback/Heroback";
 import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
-import AbrisTerraseImg from "../assets/AbrisTerraseImg.webp";
+import abrisTerraseImg from "../assets/abrisTerraseImg.webp";
 import Apropos from "../components/apropos/Apropos";
 import aproposAbris from "../assets/aproposAbris.jpg";
 import aproposTerrasse from "../assets/aproposTerrasse.jpg";
@@ -14,8 +14,8 @@ const AbrisTerrasse = () => {
       <Avantnav />
       <Navbar />
       <Heroback
-        imageSrc={AbrisTerraseImg}
-        text="Optez pour l'installation de menuiseries extérieures, alliant style et performance"
+        imageSrc={abrisTerraseImg}
+        text="Abris et terrasses sur mesure, pour un extérieur unique et personnalisé."
         titre=""
       />
       <Apropos

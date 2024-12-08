@@ -48,3 +48,32 @@
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 768px) {
+  .doubleimage {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .double-gauche {
+    padding-right: 0;
+    margin-bottom: 20px; /* Ajout d'un espace entre le texte et l'image */
+  }
+
+  .double-gauche h3,
+  .double-gauche h2,
+  .double-gauche p {
+    text-align: center;
+  }
+
+  .double-droite {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .apropos-img {
+    width: 90%; /* Réduction de l'image pour s'adapter à l'écran */
+    max-width: 400px; /* Limite la taille maximale sur les écrans plus grands */
+  }
+}
