@@ -1,6 +1,7 @@
 import Heroback from "../components/heroback/Heroback";
 import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
+import Navbar from "../components/navbar/Navbar";
 import abrisTerraseImg from "../assets/abrisTerraseImg.webp";
 import Apropos from "../components/apropos/Apropos";
 import aproposAbris from "../assets/aproposAbris.jpg";

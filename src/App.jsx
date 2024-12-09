@@ -13,6 +13,8 @@ import RevetementSol from "./pages/RevetementSol";
 import RevetementMurs from "./pages/RevetementMurs";
 import SalleDeBain from "./pages/SalleDeBain";
 import Mentionslegales from "./pages/Mentionslegales";
+import ProjetPersonnalise from "./pages/ProjetPersonnalise";
+import Contact from "./pages/ContactPage";
 
 const App = () => {
   return (
@@ -35,8 +37,12 @@ const App = () => {
           <Route path="/travauxInt/revetementSol" element={<RevetementSol />} />
           <Route path="/travauxExt/abrisTerrasse" element={<AbrisTerrasse />} />
           <Route path="/travauxExt/habillageSol" element={<HabillageSol />} />
-          <Route path="/travauxExt" element={<TravauxExt />} />
+          <Route
+            path="/travauxExt/projetPersonnalise"
+            element={<ProjetPersonnalise />}
+          />
           <Route path="/mentionslegales" element={<Mentionslegales />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
     </div>

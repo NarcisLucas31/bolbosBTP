@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.css";
 import bois from "../../assets/bois.jpg";
 import salonhero from "../../assets/salonhero.jpg";
-
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className="hero">
@@ -18,7 +18,9 @@ const Hero = () => {
         <div className="hero-overlay">
           <h1>Bolbos BTP,</h1>
           <p>votre partenaire de confiance pour des solutions sur-mesure !</p>
-          <button className="contact-button">Contactez Nous</button>
+          <button className="contact-button">
+            <Link to="/contact">Contactez Nous</Link>
+          </button>
         </div>
       </div>
     </div>

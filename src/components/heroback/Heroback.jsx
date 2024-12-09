@@ -1,5 +1,6 @@
 import React from "react";
 import "./Heroback.css";
+import { Link } from "react-router-dom";
 
 const Heroback = ({ imageSrc, text, titre }) => {
   return (
@@ -10,7 +11,9 @@ const Heroback = ({ imageSrc, text, titre }) => {
       <div className="hero-overlay">
         <h1>{titre}</h1>
         <p>{text}</p>
-        <button className="contact-button">Contactez Nous</button>
+        <button className="contact-button">
+          <Link to="/contact">Contactez Nous</Link>
+        </button>
       </div>
     </div>
   );

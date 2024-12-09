@@ -60,7 +60,7 @@ const Navbar = () => {
             }`}
           >
             <NavLink to="/menuiserie/menuiserieExt">
-              <li>Pole menuiserie extérieures</li>
+              <li>Pose menuiserie extérieures</li>
             </NavLink>
             <NavLink to="/menuiserie/dressing">
               <li>Dressing sur mesure</li>
@@ -121,8 +121,8 @@ const Navbar = () => {
             <NavLink to="/travauxExt/abrisTerrasse">
               <li>Abris / Terrasse</li>
             </NavLink>
-            <NavLink to="/travauxExt/?">
-              <li>??</li>
+            <NavLink to="/travauxExt/projetPersonnalise">
+              <li>Vos projet personnalisé</li>
             </NavLink>
           </ul>
         </li>
