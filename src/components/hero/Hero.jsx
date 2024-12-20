@@ -3,17 +3,22 @@ import "./Hero.css";
 import bois from "../../assets/bois.jpg";
 import salonhero from "../../assets/salonhero.jpg";
 import { Link } from "react-router-dom";
+
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero-content">
         <div className="hero-image">
           <img
-            src={salonhero}
+            src={bois}
             alt="Chambre en bois moderne"
             className="main-image"
           />
-          <img src={bois} alt="Texture de bois" className="secondary-image" />
+          <img
+            src={salonhero}
+            alt="Texture de bois"
+            className="secondary-image"
+          />
         </div>
         <div className="hero-overlay">
           <h1>Bolbos BTP,</h1>

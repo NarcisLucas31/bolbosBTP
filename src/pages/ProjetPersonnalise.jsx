@@ -6,6 +6,7 @@ import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import projet1 from "../assets/projet1.jpg";
+import Pavdev from "../components/pavdev/Pavdev";
 
 const ProjetPersonnalise = () => {
   return (
@@ -18,6 +19,7 @@ const ProjetPersonnalise = () => {
         titre=""
       />
       <Titre subTitre="Contactez nous" titre="Venez" />
+      <Pavdev />
       <Contact />
       <Footer />
     </div>

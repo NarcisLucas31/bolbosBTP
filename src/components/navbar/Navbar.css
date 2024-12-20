@@ -141,11 +141,6 @@ nav ul li a:hover::after {
 .scroll-icon.rotated {
   transform: rotate(180deg); /* Rotation à 180° lors du clic */
 }
-@media (max-width: 1000px) {
-  nav ul li {
-    margin: 10px 15px;
-  }
-}
 
 @media (max-width: 740px) {
   nav ul {
@@ -212,11 +207,6 @@ nav ul li a:hover::after {
     display: none;
     padding: 0;
     background: transparent;
-  }
-
-  nav ul li:hover .submenu {
-    display: block;
-    position: relative;
   }
 
   .submenu li {

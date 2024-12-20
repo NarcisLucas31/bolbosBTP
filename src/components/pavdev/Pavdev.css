@@ -1,0 +1,73 @@
+/* Conteneur principal avec des marges pour centrer */
+.pavdev-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 40px auto; /* Marge pour centrer le cadre et donner un effet aéré */
+  max-width: 800px;
+  background-color: #f9f9ff; /* Couleur de fond légère */
+  border: 2px solid #cfcfcf; /* Bordure grise */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Contenu */
+.pavdev-content {
+  padding: 20px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: left;
+}
+
+/* Titre */
+.pavdev-title {
+  font-size: 1.5em;
+  color: #3a3a91;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Liste des étapes */
+.pavdev-steps {
+  list-style: none;
+  padding-left: 0;
+  margin: 20px 0;
+}
+
+.pavdev-steps li {
+  margin-bottom: 10px;
+  font-size: 1em;
+}
+
+.pavdev-steps strong {
+  color: #3a3a91;
+}
+
+/* Texte "Prêt à démarrer" */
+.pavdev-ready {
+  margin-top: 15px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #3a3a91;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 600px) {
+  .pavdev-container {
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .pavdev-title {
+    font-size: 1.2em;
+  }
+
+  .pavdev-steps li {
+    font-size: 0.9em;
+  }
+
+  .pavdev-ready {
+    font-size: 0.9em;
+  }
+}

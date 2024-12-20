@@ -50,7 +50,7 @@ const RevetementSol = () => {
         variété de formes esthétiques et de tailles, pour s'adapter parfaitement à vos envies et à votre espace."
           titre=""
         />
-        <Titre subTitre="" titre="Parquet" />
+        <Titre subTitre="" titre="Carrelage" />
         <Aproposdroite
           imageSrc={parquet5}
           text="Le grès cérame est un revêtement de sol particulièrement résistant aux chocs, à l'humidité et à l'usure, ce qui le rend idéal 

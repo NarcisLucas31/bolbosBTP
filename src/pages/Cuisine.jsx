@@ -26,16 +26,18 @@ const Cuisine = () => {
           text="Nous sommes à l’écoute de vos besoins pour concevoir une cuisine sur mesure qui répond parfaitement à vos envies et à vos 
           contraintes. Nos experts vous accompagnent dans le choix des matériaux, des couleurs et des agencements, en vous offrant des conseils 
           avisés pour un résultat harmonieux et fonctionnel, adapté à votre style de vie."
-          mainImage={cuisine2}
-          backgroundImage={bois}
+          mainImage={bois}
+          backgroundImage={cuisine2}
         />
         <Imageback
-          titre="Accompagnement et conseils personnalisés"
-          text="Nous sommes à l’écoute de vos besoins pour concevoir une cuisine sur mesure qui répond parfaitement à vos envies et à vos 
-          contraintes. Nos experts vous accompagnent dans le choix des matériaux, des couleurs et des agencements, en vous offrant des conseils 
-          avisés pour un résultat harmonieux et fonctionnel, adapté à votre style de vie."
-          mainImage={cuisine3}
-          backgroundImage={feuille}
+          titre="Efficacité, qualité et finitions d’exception"
+          text="Parce que votre temps est précieux, nous allions rapidité d’exécution et souci du détail pour vous offrir une cuisine sur mesure 
+          qui répond à toutes vos attentes. Grâce à notre organisation rigoureuse et à notre expertise, nous respectons les délais convenus tout 
+          en maintenant une qualité irréprochable. Chaque réalisation est le fruit d’un travail minutieux, avec des matériaux de haute qualité 
+          pour garantir durabilité et élégance. Votre cuisine, pensée pour durer, sera installée avec soin, combinant praticité et finitions 
+          impeccables pour une satisfaction totale."
+          mainImage={feuille}
+          backgroundImage={cuisine3}
         />
       </div>
       <Footer />
