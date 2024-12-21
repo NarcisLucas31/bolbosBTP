@@ -18,9 +18,7 @@
 
 /* Description */
 .imagemid-content p {
-  font-size: 1.1rem;
-  color: #333;
-  line-height: 1.5;
+  color: black;
   margin: 0 1rem;
   max-width: 800px; /* Limite la largeur pour une meilleure lisibilité */
 }
@@ -35,11 +33,7 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .imagemid-title {
-    font-size: 1.8rem;
-  }
-
+@media (max-width: 800px) {
   .imagemid-description {
     font-size: 1rem;
     margin: 0 1rem;
@@ -51,10 +45,6 @@
 }
 
 @media (max-width: 480px) {
-  .imagemid-title {
-    font-size: 1.5rem;
-  }
-
   .imagemid-description {
     font-size: 0.9rem;
   }

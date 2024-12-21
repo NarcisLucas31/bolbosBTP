@@ -11,6 +11,9 @@ body {
   background: #f9f9f9;
 }
 
+p {
+  line-height: 1.5;
+}
 a {
   text-decoration: none;
   color: inherit;

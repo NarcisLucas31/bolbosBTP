@@ -142,7 +142,7 @@ nav ul li a:hover::after {
   transform: rotate(180deg); /* Rotation à 180° lors du clic */
 }
 
-@media (max-width: 740px) {
+@media (max-width: 800px) {
   nav ul {
     position: fixed;
     top: 0;
