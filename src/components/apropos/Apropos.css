@@ -9,6 +9,9 @@
 .apropos-gauche {
   flex-basis: 40%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .apropos-droite {
@@ -16,7 +19,6 @@
 }
 
 .apropos-img {
-  width: 100%;
   width: 400px; /* Taille plus grande pour la largeur */
   height: 250px; /* Taille plus grande pour la hauteur */
   object-fit: cover; /* Maintient un bon ratio tout en remplissant la zone */

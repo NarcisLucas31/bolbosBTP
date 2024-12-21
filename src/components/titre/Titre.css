@@ -13,3 +13,15 @@
   margin-top: 5px;
   text-transform: none;
 }
+
+/* Media query pour les écrans de 800px et plus */
+@media (min-width: 800px) {
+  .titre {
+    font-size: 18px; /* Exemple d'agrandissement */
+    margin: 90px 0 40px; /* Ajustement des marges */
+  }
+
+  .titre h2 {
+    font-size: 36px; /* Texte plus grand */
+  }
+}
