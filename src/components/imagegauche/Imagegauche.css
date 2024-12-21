@@ -63,8 +63,6 @@
     max-width: 90%; /* Réduit légèrement la largeur de l'image pour les petits écrans */
     margin: 0 auto; /* Centre l'image dans son conteneur */
   }
-  
-  }
   .texte-droite {
     padding-left: 0;
   }
