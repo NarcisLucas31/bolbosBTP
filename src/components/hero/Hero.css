@@ -1,4 +1,4 @@
-/* Conteneur principal avec des marges pour centrer */
+/* Hero.css */
 .hero {
   position: relative;
   width: 100%;
@@ -24,9 +24,9 @@
 /* Styles pour les images l'une au-dessus de l'autre */
 .hero-image {
   display: flex;
-  flex-direction: column; /* Empile les images verticalement */
+  flex-direction: column;
   align-items: center;
-  gap: 10px; /* Espace entre les images */
+  gap: 10px;
 }
 
 .main-image {
@@ -87,6 +87,53 @@
   background-color: #d8a536;
 }
 
+/* Nouveau style pour la section contact */
+.hero-contact {
+  margin-top: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: left;
+}
+
+.hero-contact h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.hero-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-contact input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.hero-contact button {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f9c947;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero-contact button:hover {
+  background-color: #d8a536;
+}
+
 @media (max-width: 500px) {
   .hero {
     padding: 100px 10px;
@@ -108,10 +155,15 @@
   .main-image {
     display: none; /* Cache l'image secondaire sur mobile */
   }
+
   .secondary-image {
-    max-width: 100%;
-    margin: 0 auto; /* Centre l'image secondaire */
-    margin-top: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* S'assure que l'image couvre tout l'écran sans déformation */
+    filter: brightness(0.7); /* Applique un effet sombre à l'image */
+    transform-origin: center; /* Définit le point central pour le dézoom */
   }
 
   .hero-overlay {

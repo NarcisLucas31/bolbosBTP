@@ -27,7 +27,7 @@
 }
 
 /* -------- Styles pour écrans de téléphone -------- */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   .hero-overlay {
     padding: 20px 15px;
     border-radius: 8px;
