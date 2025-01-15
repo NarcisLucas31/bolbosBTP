@@ -18,7 +18,7 @@ const MenuiserieExt = () => {
       <Navbar />
       <Heroback
         imageSrc={menuisExt1}
-        text="Abris et terrasses sur mesure, pour un extérieur unique et personnalisé."
+        text="Optez pour l'installation de menuiseries extérieures, alliant style et performance"
         titre=""
       />
       <div className="container">
