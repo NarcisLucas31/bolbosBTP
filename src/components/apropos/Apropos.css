@@ -36,22 +36,3 @@
   color: black;
   margin-bottom: 15px;
 }
-
-@media (max-width: 800px) {
-  .apropos {
-    flex-direction: column;
-  }
-  .apropos-gauche {
-    flex-basis: 90%;
-    margin: 20px;
-    order: 2;
-  }
-  .apropos-droite {
-    flex-basis: 90%;
-  }
-  .apropos-img {
-    width: 300px; /* Taille fixe pour la largeur sur mobile */
-    height: 200px; /* Taille fixe pour la hauteur sur mobile */
-    object-fit: cover; /* Maintient le contenu adapté */
-  }
-}

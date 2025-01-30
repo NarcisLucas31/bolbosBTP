@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Avantnav.css";
+import tel_img from "../../assets/tel.png";
 
 const Avantnav = () => {
   const [contactText, setContactText] = useState("Contacter Nous");
@@ -34,12 +35,21 @@ const Avantnav = () => {
         {isMobile ? (
           <a
             href="tel:+33650075240"
-            style={{ textDecoration: "none", color: "black" }}
+            style={{
+              textDecoration: "none",
+              color: "black",
+              display: "flex",
+              alignItems: "center",
+            }}
           >
+            <img src={tel_img} alt="Téléphone" className="tel-icon" />
             {contactText}
           </a>
         ) : (
-          contactText
+          <div style={{ display: "flex", alignItems: "center" }}>
+            <img src={tel_img} alt="Téléphone" className="tel-icon" />
+            {contactText}
+          </div>
         )}
       </button>
       <button className="avantnav-button">Avis</button>

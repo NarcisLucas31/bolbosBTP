@@ -24,8 +24,18 @@
   cursor: pointer;
   transition: 0.3s;
   font-size: 16px;
-  width: 180px; /* Taille fixe pour les boutons */
+  width: 200px; /* Taille fixe pour les boutons */
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tel-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px; /* Espace entre l'icône et le texte */
+  filter: invert(100%); /* Applique la couleur noire à l'icône */
 }
 
 .avantnav-button:hover {
@@ -40,7 +50,7 @@
   }
 
   .avantnav-button {
-    width: 150px; /* Réduit la largeur des boutons sur les petits écrans */
+    width: 180px; /* Réduit la largeur des boutons sur les petits écrans */
     font-size: 14px; /* Réduit légèrement la taille du texte */
   }
 }

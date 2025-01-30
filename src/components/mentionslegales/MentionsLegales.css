@@ -1,0 +1,70 @@
+/* Conteneur principal */
+.mentions-legales {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: black;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+.mentions-legales h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Sous-titres */
+.mentions-legales h2 {
+  font-size: 1.5rem;
+  margin-top: 40px; /* Espace avant le sous-titre */
+  margin-bottom: 20px;
+  border-bottom: 2px solid #96562e;
+  padding-bottom: 5px;
+}
+
+/* Paragraphes */
+.mentions-legales p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Liens */
+.mentions-legales a {
+  color: #b08467;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mentions-legales a:hover {
+  color: #b08467;
+  text-decoration: underline;
+}
+
+/* Section */
+.mentions-legales section {
+  margin-bottom: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .mentions-legales {
+    padding: 15px;
+  }
+
+  .mentions-legales h1 {
+    font-size: 1.8rem;
+  }
+
+  .mentions-legales h2 {
+    font-size: 1.3rem;
+  }
+
+  .mentions-legales p {
+    font-size: 0.9rem;
+  }
+}
