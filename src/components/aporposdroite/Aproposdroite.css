@@ -28,12 +28,15 @@
   max-width: 400px;
 }
 .aproposdroite p {
-  color: black;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 1rem;
+  max-width: 800px;
 }
 @media (max-width: 800px) {
   .aproposdroite {
     flex-direction: column;
+    text-align: center;
   }
   .aproposdroite-gauche {
     flex-basis: 90%;
@@ -47,5 +50,18 @@
     width: 300px; /* Taille fixe pour la largeur sur mobile */
     height: 200px; /* Taille fixe pour la hauteur sur mobile */
     object-fit: cover; /* Maintient le contenu adapté */
+    margin-top: 10px;
+  }
+  .aproposdroite h2 {
+    font-size: 28px;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .aproposdroite p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.4;
+    color: #333;
   }
 }

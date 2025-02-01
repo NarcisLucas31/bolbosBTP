@@ -1,7 +1,6 @@
 import React from "react";
 import "./Contact.css";
 import msg_img from "../../assets/message.png";
-import fleche from "../../assets/fleche-droite.png";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -42,31 +41,22 @@ const Contact = () => {
           iste, suscipit ut soluta. Ab!
         </p>
       </div>
-      <div className="contact-col">
+      <div className="contact-form">
         <form onSubmit={onSubmit}>
-          <label>Nom</label>
-          <input
-            type="text"
-            name=""
-            placeholder="Entrer votre prénom"
-            required
-          />
-          <label>Numéro mobile</label>
-          <input
-            type="text"
-            name=""
-            placeholder="Entrer votre numéro"
-            required
-          />
-          <label>Message</label>
+          <input type="text" name="" placeholder="Nom *" required />
+          <input type="text" name="" placeholder="Société" />
+          <input type="text" name="" placeholder="Adresse" />
+          <input type="text" name="" placeholder="Ville" />
+          <input type="text" name="" placeholder="Code postal" />
+          <input type="text" name="" placeholder="Téléphone *" required />
+          <input type="text" name="" placeholder="E-mail *" required />
           <textarea
             name="message"
-            rows="6"
-            placeholder="Ecrivez votre message"
+            placeholder="Votre message"
             required
           ></textarea>
-          <button type="submit" className="btn dark-btn">
-            Envoyer <img src={fleche} alt="" />
+          <button type="submit" className="contact-button">
+            Envoyer
           </button>
         </form>
         <span>{result}</span>

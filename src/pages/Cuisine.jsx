@@ -4,7 +4,7 @@ import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import cuisine1 from "../assets/cuisine1.webp";
-import cuisine2 from "../assets/cuisine2.jpg";
+import cuisine2 from "../assets/cuisine2.jpeg";
 import cuisine3 from "../assets/cuisine3.jpg";
 import bois from "../assets/bois.jpg";
 import feuille from "../assets/feuille.jpg";

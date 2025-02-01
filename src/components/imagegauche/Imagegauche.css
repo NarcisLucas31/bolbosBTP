@@ -55,16 +55,18 @@
     align-items: center;
     text-align: center;
   }
+  .texte-droite {
+    padding-left: 0;
+    order: 1; /* Place le texte en premier */
+  }
   .image-gauche {
-    margin-bottom: 20px; /* Ajout d'un espace entre l'image et le texte */
+    order: 2; /* Place l'image en dessous */
     width: 100%;
+    margin-top: 20px; /* Ajout d'un espace entre le texte et l'image */
   }
   .imagegauche-img {
     max-width: 90%; /* Réduit légèrement la largeur de l'image pour les petits écrans */
     margin: 0 auto; /* Centre l'image dans son conteneur */
-  }
-  .texte-droite {
-    padding-left: 0;
   }
   .texte-droite h3,
   .texte-droite h2,

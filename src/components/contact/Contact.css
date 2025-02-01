@@ -4,59 +4,60 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
+  flex-direction: row;
 }
 
 .contact-col {
-  flex-basis: 48%;
-  color: black;
+  flex: 1;
+  text-align: left;
+  padding-right: 40px;
 }
 
-.contact-col h3 {
-  color: blue;
-  font-weight: 500;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+.contact-form {
+  flex: 1;
 }
 
-.contact-col h3 img {
-  width: 35px;
-  margin-left: 10px;
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  max-width: 600px;
+  margin: auto;
 }
 
-.contact-col p {
-  max-width: 450px;
-  list-style: 0.3;
-}
-
-.contact-col ul li {
-  display: flex;
-  align-items: center;
-  margin: 20px 0;
-}
-
-.contact-col ul li img {
-  width: 25px;
-  margin-right: 10px;
-}
-
-.contact form input,
-.contact form textarea {
-  display: flex;
-  width: 100%;
+.contact-form form input,
+.contact-form form textarea {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   padding: 15px;
-  border: 0;
-  outline: 0;
-  margin-bottom: 15px;
-  margin-top: 5px;
-  background: rgb(192, 181, 181);
-  resize: none;
+  width: 100%;
+  border: none;
 }
 
-.contact-col span {
-  display: block;
-  margin: 20px 0;
+.contact-form form textarea {
+  grid-column: span 2;
+  height: 100px;
+}
+
+.contact-form form .full-width {
+  grid-column: span 2;
+}
+
+.contact-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #f9c947;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  grid-column: span 2;
+}
+
+.contact-button:hover {
+  background-color: #d8a536;
 }
 
 @media screen and (max-width: 768px) {
@@ -66,13 +67,16 @@
     text-align: center;
   }
   .contact-col {
-    flex-basis: 100%;
+    text-align: center;
+    padding-right: 0;
     margin-bottom: 20px;
   }
-  .contact-col h3 img {
-    margin-left: 5px;
+  .contact-form form {
+    grid-template-columns: 1fr;
   }
-  .contact form {
-    width: 100%;
+  .contact-form form textarea,
+  .contact-form form .full-width,
+  .contact-button {
+    grid-column: span 1;
   }
 }

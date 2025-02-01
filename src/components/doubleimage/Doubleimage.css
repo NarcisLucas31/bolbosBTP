@@ -13,6 +13,7 @@
 .double-gauche {
   flex: 1;
   padding-left: 20px;
+  padding-right: 10px;
 }
 
 .double-gauche h3 {

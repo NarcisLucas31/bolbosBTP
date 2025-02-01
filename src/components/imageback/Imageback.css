@@ -23,7 +23,6 @@
 
 .accompagnement-text {
   font-size: 1.1rem;
-  color: #333;
   line-height: 1.5;
   margin: 0 1rem;
   max-width: 800px;
@@ -60,14 +59,15 @@
   }
 
   .accompagnement-title {
-    font-size: 1.5rem;
+    font-size: 28px;
     margin-bottom: 10px; /* Ajoute un espace sous le titre */
   }
 
   .accompagnement-text {
-    font-size: 0.9rem;
-    margin: 0; /* Supprime les marges latérales pour maximiser l'espace disponible */
+    font-size: 16px;
+    margin: 0;
     line-height: 1.4; /* Réduction de l'interlignage pour un texte compact */
+    color: #333;
   }
 
   .accompagnement-image {

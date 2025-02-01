@@ -33,6 +33,43 @@
 }
 
 .apropos p {
-  color: black;
-  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0 1rem;
+  max-width: 800px;
+}
+
+@media (max-width: 800px) {
+  .apropos {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apropos-gauche {
+    order: 2; /* Place l'image en dessous */
+  }
+
+  .apropos-droite {
+    order: 1; /* Place le texte au-dessus */
+  }
+
+  .apropos-img {
+    width: 300px; /* Taille fixe pour la largeur sur mobile */
+    height: 200px; /* Taille fixe pour la hauteur sur mobile */
+    object-fit: cover; /* Maintient le contenu adapté */
+    margin-top: 10px;
+  }
+
+  .apropos h2 {
+    font-size: 28px; /* Réduction de la taille du titre */
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .apropos p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.4;
+    color: #333;
+  }
 }
