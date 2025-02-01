@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import Titre from "../components/titre/Titre";
 import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";

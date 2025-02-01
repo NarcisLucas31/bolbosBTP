@@ -16,7 +16,7 @@
   justify-content: center;
 }
 
-.apropos-img {
+.imagegauche-img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -59,7 +59,7 @@
     margin-bottom: 20px; /* Ajout d'un espace entre l'image et le texte */
     width: 100%;
   }
-  .apropos-img {
+  .imagegauche-img {
     max-width: 90%; /* Réduit légèrement la largeur de l'image pour les petits écrans */
     margin: 0 auto; /* Centre l'image dans son conteneur */
   }

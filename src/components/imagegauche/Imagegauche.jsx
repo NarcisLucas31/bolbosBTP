@@ -5,7 +5,7 @@ const Imagegauche = ({ imageSrc, text, titre, subTitre }) => {
   return (
     <div className="imagegauche">
       <div className="image-gauche">
-        <img src={imageSrc} alt="" className="apropos-img" />
+        <img src={imageSrc} alt="" className="imagegauche-img" />
       </div>
 
       <div className="texte-droite">
