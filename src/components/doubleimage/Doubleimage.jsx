@@ -11,7 +11,7 @@ const Doubleimage = ({ imageSrc, text, titre, subTitre }) => {
       </div>
 
       <div className="double-droite">
-        <img src={imageSrc} alt="" className="apropos-img" />
+        <img src={imageSrc} alt="" className="doubleimage-img" />
       </div>
     </div>
   );
