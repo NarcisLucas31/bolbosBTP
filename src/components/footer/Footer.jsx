@@ -26,8 +26,10 @@ const Footer = () => {
           </p>
         </div>
         <div className="footer-section">
-          <h3>Avis :</h3>
-          <div className="feedback-box"></div>
+          <h3>Nos avis :</h3>
+          <Link to="/avis">
+            <button className="avantnav-button">Avis</button>
+          </Link>
         </div>
       </div>
       <div className="footer-legal">

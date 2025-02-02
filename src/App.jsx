@@ -15,6 +15,7 @@ import SalleDeBain from "./pages/SalleDeBain";
 import Mentionslegales from "./pages/Mentionslegales";
 import ProjetPersonnalise from "./pages/ProjetPersonnalise";
 import Contact from "./pages/ContactPage";
+import Avis from "./pages/Avis";
 
 const App = () => {
   return (
@@ -43,6 +44,7 @@ const App = () => {
           />
           <Route path="/mentionslegales" element={<Mentionslegales />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/avis" element={<Avis />} />
         </Routes>
       </BrowserRouter>
     </div>

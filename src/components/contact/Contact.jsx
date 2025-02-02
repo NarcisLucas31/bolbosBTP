@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import msg_img from "../../assets/message.png";
 import user_icon from "../../assets/user_icon.png";
 import company_icon from "../../assets/company_icon.png";
 import address_icon from "../../assets/address_icon.png";

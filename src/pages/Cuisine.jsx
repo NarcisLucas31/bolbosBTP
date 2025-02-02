@@ -6,8 +6,8 @@ import Heroback from "../components/heroback/Heroback";
 import cuisine1 from "../assets/cuisine1.webp";
 import cuisine2 from "../assets/cuisine2.jpeg";
 import cuisine3 from "../assets/cuisine3.jpg";
-import bois from "../assets/bois.jpg";
-import feuille from "../assets/feuille.jpg";
+import bois from "../assets/bois.jpeg";
+import feuille from "../assets/feuille.jpeg";
 import Imageback from "../components/imageback/Imageback";
 
 const Cuisine = () => {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Avantnav.css";
 import tel_img from "../../assets/tel.png";
+import { Link } from "react-router-dom";
 
 const Avantnav = () => {
   const [contactText, setContactText] = useState("Contacter Nous");
@@ -52,7 +53,9 @@ const Avantnav = () => {
           </div>
         )}
       </button>
-      <button className="avantnav-button">Avis</button>
+      <Link to="/avis">
+        <button className="avantnav-button">Avis</button>
+      </Link>
     </div>
   );
 };
