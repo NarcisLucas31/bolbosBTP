@@ -1,6 +1,14 @@
 import React from "react";
 import "./Contact.css";
 import msg_img from "../../assets/message.png";
+import user_icon from "../../assets/user_icon.png";
+import company_icon from "../../assets/company_icon.png";
+import address_icon from "../../assets/address_icon.png";
+import city_icon from "../../assets/city_icon.png";
+import postal_icon from "../../assets/postal_icon.png";
+import phone_icon from "../../assets/phone_icon.png";
+import email_icon from "../../assets/email_icon.png";
+import message_icon from "../../assets/message_icon.png";
 
 const Contact = () => {
   const [result, setResult] = React.useState("");
@@ -31,9 +39,7 @@ const Contact = () => {
   return (
     <div className="contact">
       <div className="contact-col">
-        <h3>
-          Envoyez nous un message <img src={msg_img} alt="" />
-        </h3>
+        <h3>Envoyez nous un message</h3>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
           natus, sequi eligendi obcaecati cum molestiae quae atque, repudiandae
@@ -43,18 +49,55 @@ const Contact = () => {
       </div>
       <div className="contact-form">
         <form onSubmit={onSubmit}>
-          <input type="text" name="" placeholder="Nom *" required />
-          <input type="text" name="" placeholder="Société" />
-          <input type="text" name="" placeholder="Adresse" />
-          <input type="text" name="" placeholder="Ville" />
-          <input type="text" name="" placeholder="Code postal" />
-          <input type="text" name="" placeholder="Téléphone *" required />
-          <input type="text" name="" placeholder="E-mail *" required />
-          <textarea
-            name="message"
-            placeholder="Votre message"
-            required
-          ></textarea>
+          <div className="input-group">
+            <img src={user_icon} alt="user" />
+            <input type="text" name="nom" placeholder="Nom *" required />
+          </div>
+
+          <div className="input-group">
+            <img src={company_icon} alt="company" />
+            <input type="text" name="societe" placeholder="Société" />
+          </div>
+
+          <div className="input-group">
+            <img src={address_icon} alt="address" />
+            <input type="text" name="adresse" placeholder="Adresse" />
+          </div>
+
+          <div className="input-group">
+            <img src={city_icon} alt="city" />
+            <input type="text" name="ville" placeholder="Ville" />
+          </div>
+
+          <div className="input-group">
+            <img src={postal_icon} alt="postal" />
+            <input type="text" name="code_postal" placeholder="Code postal" />
+          </div>
+
+          <div className="input-group">
+            <img src={phone_icon} alt="phone" />
+            <input
+              type="text"
+              name="telephone"
+              placeholder="Téléphone *"
+              required
+            />
+          </div>
+
+          <div className="input-group">
+            <img src={email_icon} alt="email" />
+            <input type="text" name="email" placeholder="E-mail *" required />
+          </div>
+
+          <div className="input-group">
+            <img src={message_icon} alt="message" />
+            <textarea
+              name="message"
+              placeholder="Votre message"
+              required
+            ></textarea>
+          </div>
+
           <button type="submit" className="contact-button">
             Envoyer
           </button>
