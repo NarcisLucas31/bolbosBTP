@@ -1,0 +1,92 @@
+.doubleimagebtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.doubleimagebtn-gauche {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligne le bouton et le texte à gauche */
+}
+
+.doubleimagebtn-gauche h2 {
+  font-size: 28px;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.doubleimagebtn-gauche p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgb(95, 93, 93);
+  text-align: justify;
+}
+
+.doubleimagebtn-droite {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.doubleimagebtn-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.doubleimagebtn-link {
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #ff9800;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  align-self: flex-start; /* Aligne le bouton avec le texte */
+}
+
+.doubleimagebtn-link:hover {
+  background-color: #e68900;
+}
+
+/* Responsive */
+@media screen and (max-width: 800px) {
+  .doubleimagebtn {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .doubleimagebtn-gauche {
+    padding-left: 0;
+  }
+
+  .doubleimagebtn-gauche h2,
+  .doubleimagebtn-gauche p {
+    text-align: center;
+  }
+
+  .doubleimagebtn-droite {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .doubleimagebtn-img {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .doubleimagebtn-btn {
+    width: 60%;
+  }
+}

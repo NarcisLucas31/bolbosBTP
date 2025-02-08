@@ -71,6 +71,17 @@
   width: 100%;
 }
 
+.input-group-msg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 5px 15px;
+  grid-column: span 2; /* Permet à la case du message de prendre toute la largeur */
+}
+
 .input-group img {
   width: 20px;
   height: 20px;
@@ -93,6 +104,32 @@
   height: 100px;
 }
 
+.required-fields {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  grid-column: span 2;
+  justify-content: flex-start;
+}
+
+.checkbox-group input {
+  width: 16px;
+  height: 16px;
+  margin-left: -45%;
+}
+
+.checkbox-group label {
+  margin-left: -40%;
+}
+
 @media screen and (max-width: 768px) {
   .contact {
     flex-direction: column;
@@ -111,5 +148,16 @@
   .contact-form form .full-width,
   .contact-button {
     grid-column: span 1;
+  }
+  .checkbox-group {
+    justify-content: flex-start;
+  }
+
+  .checkbox-group input {
+    margin-left: 0; /* Réinitialise la marge pour éviter un trop grand décalage */
+  }
+
+  .checkbox-group label {
+    margin-left: -10%;
   }
 }

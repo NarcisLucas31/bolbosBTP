@@ -25,7 +25,7 @@ const Hero = () => {
           <h1>Bolbos BTP,</h1>
           <p>votre partenaire de confiance pour des solutions sur-mesure !</p>
           <button className="contact-button">
-            <Link to="/contact">Contactez Nous</Link>
+            <Link to="/contact">Contactez-nous</Link>
           </button>
         </div>
       </div>

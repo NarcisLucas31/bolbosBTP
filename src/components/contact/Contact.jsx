@@ -14,24 +14,26 @@ const Contact = () => {
 
   const onSubmit = async (event) => {
     event.preventDefault();
-    setResult("Sending....");
+    setResult("Envoi en cours...");
+
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "f60a3fe9-7012-4466-8166-a91d6beed629");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
+    const response = await fetch("https://formspree.io/f/mdkadwea", {
       method: "POST",
       body: formData,
+      headers: {
+        Accept: "application/json",
+      },
     });
 
     const data = await response.json();
 
-    if (data.success) {
-      setResult("Form Submitted Successfully");
+    if (response.ok) {
+      setResult("Formulaire envoyé avec succès !");
       event.target.reset();
     } else {
-      console.log("Error", data);
-      setResult(data.message);
+      setResult("Une erreur est survenue. Veuillez réessayer.");
+      console.log("Erreur", data);
     }
   };
 
@@ -40,10 +42,11 @@ const Contact = () => {
       <div className="contact-col">
         <h3>Envoyez nous un message</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus
-          natus, sequi eligendi obcaecati cum molestiae quae atque, repudiandae
-          cumque necessitatibus sapiente consectetur accusantium fugit incidunt
-          iste, suscipit ut soluta. Ab!
+          Vous avez un projet de construction, de rénovation ou d’aménagement ?
+          Besoin d’un devis ou de conseils personnalisés ? Notre équipe est à
+          votre disposition pour répondre à toutes vos questions. Remplissez le
+          formulaire ci-contre et nous vous contacterons dans les plus brefs
+          délais.
         </p>
       </div>
       <div className="contact-form">
@@ -51,6 +54,11 @@ const Contact = () => {
           <div className="input-group">
             <img src={user_icon} alt="user" />
             <input type="text" name="nom" placeholder="Nom *" required />
+          </div>
+
+          <div className="input-group">
+            <img src={user_icon} alt="user" />
+            <input type="text" name="prenom" placeholder="Prénom *" required />
           </div>
 
           <div className="input-group">
@@ -85,16 +93,26 @@ const Contact = () => {
 
           <div className="input-group">
             <img src={email_icon} alt="email" />
-            <input type="text" name="email" placeholder="E-mail *" required />
+            <input type="email" name="email" placeholder="E-mail *" required />
           </div>
 
-          <div className="input-group">
+          <div className="input-group-msg">
             <img src={message_icon} alt="message" />
             <textarea
               name="message"
               placeholder="Votre message"
               required
             ></textarea>
+          </div>
+
+          <p className="required-fields">* Champs obligatoires</p>
+
+          <div className="checkbox-group">
+            <input type="checkbox" id="accept" name="accept" required />
+            <label htmlFor="accept">
+              J'accepte que mes données personnelles soient utilisées pour être
+              contacté(e).
+            </label>
           </div>
 
           <button type="submit" className="contact-button">

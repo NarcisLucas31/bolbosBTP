@@ -10,7 +10,7 @@ import salledebain2 from "../assets/salledebain2.webp";
 import salledebain3 from "../assets/salledebain3.jpg";
 import salledebain4 from "../assets/salledebain4.jpg";
 
-const salleDeBain = () => {
+const SalleDeBain = () => {
   return (
     <div>
       <Avantnav />
@@ -46,4 +46,4 @@ const salleDeBain = () => {
   );
 };
 
-export default salleDeBain;
+export default SalleDeBain;

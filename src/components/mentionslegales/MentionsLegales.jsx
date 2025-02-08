@@ -12,15 +12,15 @@ const MentionsLegales = () => {
       <section>
         <h2>Éditeur du site</h2>
         <p>
-          <strong>Nom de l'entreprise :</strong> [Nom de l'entreprise]
+          <strong>Nom de l'entreprise :</strong> BOLBOS BTP
           <br />
-          <strong>Adresse :</strong> [Adresse complète]
+          <strong>Adresse :</strong> 12 Grande rue, Nogent-l'Artaud 02310
           <br />
-          <strong>Téléphone :</strong> [Numéro de téléphone]
+          <strong>Téléphone :</strong> 06 50 07 52 40
           <br />
-          <strong>Email :</strong> [Adresse email]
+          <strong>Email :</strong> Bolbosbtp@gmail.com
           <br />
-          <strong>SIRET :</strong> [Numéro SIRET]
+          <strong>SIRET :</strong> 93277069600015
           <br />
           <strong>RCS :</strong> [Numéro RCS et ville]
           <br />
@@ -54,28 +54,21 @@ const MentionsLegales = () => {
         <p>
           Pour consulter notre politique de confidentialité, veuillez cliquer
           sur ce lien :{" "}
-          <a href="/politique-de-confidentialite">
-            Politique de confidentialité
-          </a>
-          .
+          <a href="/confidentialite">Politique de confidentialité</a>.
         </p>
       </section>
 
       <section>
         <h2>Cookies</h2>
         <p>
-          Ce site utilise des cookies pour améliorer l'expérience utilisateur.
-          Pour en savoir plus, consultez notre{" "}
-          <a href="/politique-des-cookies">politique des cookies</a>.
-        </p>
-      </section>
-
-      <section>
-        <h2>Propriété intellectuelle</h2>
-        <p>
-          Tous les contenus présents sur ce site (textes, images, logos, etc.)
-          sont protégés par les lois sur la propriété intellectuelle. Toute
-          reproduction sans autorisation est interdite.
+          Notre site utilise uniquement des cookies strictement nécessaires à
+          son bon fonctionnement. Ces cookies ne collectent aucune donnée
+          personnelle à des fins commerciales ou analytiques. Ils sont
+          indispensables pour garantir une expérience utilisateur optimale et
+          assurer la sécurité du site. Conformément à la réglementation en
+          vigueur, ces cookies ne nécessitent pas de consentement de votre part.
+          Aucune donnée n'est partagée avec des tiers à des fins publicitaires
+          ou de suivi.
         </p>
       </section>
 
@@ -83,7 +76,8 @@ const MentionsLegales = () => {
         <h2>Contact</h2>
         <p>
           Pour toute question ou réclamation, vous pouvez nous contacter à
-          l'adresse suivante : <a href="mailto:[email]">[email]</a>.
+          l'adresse suivante :{" "}
+          <a href="mailto:[Bolbosbtp@gmail.com]">Bolbosbtp@gmail.com</a>.
         </p>
       </section>
     </div>

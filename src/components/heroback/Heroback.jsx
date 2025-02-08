@@ -12,7 +12,7 @@ const Heroback = ({ imageSrc, text, titre }) => {
         <h1>{titre}</h1>
         <p>{text}</p>
         <button className="contact-button">
-          <Link to="/contact">Contactez Nous</Link>
+          <Link to="/contact">Contactez-nous</Link>
         </button>
       </div>
     </div>

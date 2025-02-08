@@ -42,7 +42,6 @@ const Accueil = () => {
           services de rénovation, pose de revêtements de sols (carrelage, parquet), ainsi que des travaux de peinture et d’aménagement d’espaces. 
           À l’extérieur, notre savoir-faire couvre des projets de pavage, aménagement de terrasses, pose de clôtures et d’autres solutions pour 
           embellir vos espaces extérieurs."
-          titre=""
           subTitre="Nos domaines de compétences"
         />
         <Doubleimage
@@ -53,7 +52,7 @@ const Accueil = () => {
           titre=""
           subTitre="Engagement qualité et satisfaction client"
         />
-        <Titre subTitre="Contactez nous" titre="Venez" />
+        <Titre subTitre="" titre="Contactez-nous" />
         <Contact />
       </div>
       <Footer />

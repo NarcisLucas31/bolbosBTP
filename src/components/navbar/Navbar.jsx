@@ -13,6 +13,7 @@ const Navbar = () => {
     menuiserie: useRef(null),
     travauxInt: useRef(null),
     travauxExt: useRef(null),
+    contact: useRef(null),
   };
 
   const toggleMenu = () => {
@@ -127,11 +128,11 @@ const Navbar = () => {
           </ul>
         </li>
 
-        <NavLink to="/contact">
-          <li>
-            <button className="btn">Contact</button>
-          </li>
-        </NavLink>
+        <li>
+          <NavLink to="/contact" exact activeClassName="active">
+            Contact
+          </NavLink>
+        </li>
       </ul>
       <img src={menu} alt="Menu" className="menu-icon" onClick={toggleMenu} />
     </nav>
