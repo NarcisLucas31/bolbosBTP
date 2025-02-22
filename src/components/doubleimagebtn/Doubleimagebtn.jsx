@@ -9,6 +9,7 @@ const DoubleimageBtn = ({ imageSrc, text, subTitre, linkText, linkHref }) => {
         <p>{text}</p>
         <a href={linkHref} className="doubleimagebtn-link">
           {linkText}
+          Découvrir
         </a>
       </div>
 

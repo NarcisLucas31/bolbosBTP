@@ -38,7 +38,7 @@ const Navbar = () => {
       </NavLink>
 
       <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
-        <li>
+        <li className="contactBold">
           <NavLink to="/" exact activeClassName="active">
             Accueil
           </NavLink>
@@ -128,7 +128,7 @@ const Navbar = () => {
           </ul>
         </li>
 
-        <li>
+        <li className="contactBold">
           <NavLink to="/contact" exact activeClassName="active">
             Contact
           </NavLink>

@@ -18,7 +18,6 @@ const ProjetPersonnalise = () => {
         text="Votre projet, notre expertise : maçonnerie, toiture, et plus encore. Dites-nous vos besoins, nous le concrétisons !"
         titre=""
       />
-      <Titre subTitre="Contactez nous" titre="Venez" />
       <Pavdev />
       <Contact />
       <Footer />

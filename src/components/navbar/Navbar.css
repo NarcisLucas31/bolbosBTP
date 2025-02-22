@@ -29,6 +29,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none; /* Enlève le soulignement par défaut des liens */
   position: relative; /* Nécessaire pour positionner la ligne */
+  color: black;
 }
 
 nav ul li a.active {
@@ -46,9 +47,7 @@ nav ul li a.active::after {
 }
 
 nav ul li a:hover {
-  color: #000000; /* Change la couleur sur le survol */
-  transition: color 0.3s ease;
-  font-weight: bold;
+  color: black;
 }
 
 nav ul li a:hover::after {
@@ -140,6 +139,10 @@ nav ul li a:hover::after {
 }
 .scroll-icon.rotated {
   transform: rotate(180deg); /* Rotation à 180° lors du clic */
+}
+
+.contactBold:hover {
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {

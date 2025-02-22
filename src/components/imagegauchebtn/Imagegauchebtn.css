@@ -29,7 +29,7 @@
   padding-right: 10px; /* Équilibre avec doubleimagebtn-gauche */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centre le texte verticalement */
+  justify-content: center;
   align-items: flex-start; /* Alignement à gauche */
 }
 
@@ -51,8 +51,8 @@
   margin-top: 15px;
   padding: 10px 20px;
   font-size: 16px;
-  color: white;
-  background-color: #ff9800;
+  color: black;
+  background-color: #f9c947;
   border-radius: 5px;
   text-decoration: none;
   display: inline-block;
@@ -60,7 +60,7 @@
 }
 
 .imagegauchebtn-link:hover {
-  background-color: #e68900;
+  background-color: #d8a536;
 }
 
 /* Responsive */
@@ -75,6 +75,7 @@
     padding-left: 0;
     padding-right: 0;
     align-items: center; /* Centre le contenu */
+    order: -1; /* Assure que la section droite (titre, texte, bouton) soit avant l'image */
   }
 
   .imagegauchebtn-gauche {
@@ -84,7 +85,7 @@
 
   .imagegauchebtn-img {
     max-width: 90%;
-    margin: 0 auto;
+    margin: 20px auto 0; /* Ajoute un espace au-dessus de l'image */
   }
 
   .imagegauchebtn-droite h2,
@@ -95,5 +96,6 @@
   .imagegauchebtn-link {
     width: 60%;
     text-align: center;
+    margin: 20px auto; /* Centre le bouton */
   }
 }

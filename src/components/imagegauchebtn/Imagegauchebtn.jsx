@@ -13,6 +13,7 @@ const Imagegauchebtn = ({ imageSrc, text, subTitre, linkHref, linkText }) => {
         <p>{text}</p>
         <a href={linkHref} className="imagegauchebtn-link">
           {linkText}
+          Découvrir
         </a>
       </div>
     </div>
