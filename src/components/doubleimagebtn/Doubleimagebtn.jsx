@@ -1,5 +1,5 @@
 import React from "react";
-import "./DoubleimageBtn.css";
+import "./Doubleimagebtn.css";
 
 const DoubleimageBtn = ({ imageSrc, text, subTitre, linkText, linkHref }) => {
   return (
