@@ -6,7 +6,7 @@ import Footer from "../components/footer/Footer";
 import Doubleimagebtn from "../components/doubleimagebtn/Doubleimagebtn";
 import Imagegauchebtn from "../components/imagegauchebtn/Imagegauchebtn";
 import Avantnav from "../components/avantnav/Avantnav";
-import AbrisTerraseImg from "../assets/AbrisTerraseImg.webp";
+import AbrisTerraseImg from "../assets/abrisTerraseImg.webp";
 import Projet1 from "../assets/projet1.jpg";
 
 const TravauxExt = () => {
