@@ -7,7 +7,7 @@ import Doubleimagebtn from "../components/doubleimagebtn/Doubleimagebtn";
 import Imagegauchebtn from "../components/imagegauchebtn/Imagegauchebtn";
 import Avantnav from "../components/avantnav/Avantnav";
 import Parquet1 from "../assets/parquet1.jpg";
-import Mur1 from "../assets/Mur1.jpg";
+import Mur1 from "../assets/mur1.jpg";
 import Salledebain1 from "../assets/salledebain1.webp";
 
 const Services = () => {
