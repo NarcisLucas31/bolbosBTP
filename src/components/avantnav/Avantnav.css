@@ -42,21 +42,29 @@
   background: #ecdede;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .avantnav {
-    justify-content: center; /* Centre les boutons sur les écrans moyens/petits */
+    justify-content: center; /* Centre le contenu */
     padding-right: 0;
   }
 
   .avantnav-button {
     width: 180px; /* Réduit la largeur des boutons sur les petits écrans */
-    font-size: 14px; /* Réduit légèrement la taille du texte */
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .avantnav-button:nth-child(2) {
+  .avis-button {
     display: none;
+  }
+
+  .avantnav {
+    justify-content: center; /* Centre le bouton */
+  }
+
+  .avantnav-button {
+    width: 250px; /* Définit une largeur de 400px */
+    text-align: center;
   }
 }

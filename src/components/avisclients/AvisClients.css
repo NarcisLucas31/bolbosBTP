@@ -1,0 +1,50 @@
+/* AvisClients.css */
+.avis-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.avis-list {
+  list-style: none;
+  padding: 0;
+}
+
+.avis-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.avis-note {
+  font-size: 24px;
+  color: #ff9800;
+  margin-bottom: 5px;
+}
+
+.avis-date {
+  font-size: 14px;
+  color: grey;
+}
+
+@media (min-width: 600px) {
+  .avis-item {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .avis-note {
+    font-size: 28px;
+  }
+
+  .avis-date {
+    font-size: 16px;
+  }
+}

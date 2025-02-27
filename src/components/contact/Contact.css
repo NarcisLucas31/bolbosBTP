@@ -89,6 +89,13 @@
   flex-shrink: 0; /* Empêche l'icône de rétrécir */
 }
 
+.input-group-msg img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+  flex-shrink: 0; /* Empêche l'icône de rétrécir */
+}
+
 .input-group input,
 .input-group textarea {
   border: none;
@@ -130,7 +137,40 @@
   margin-left: -40%;
 }
 
+select.placeholder {
+  color: gray;
+}
+select:focus {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
+  .contact-form form {
+    display: flex;
+    flex-direction: column; /* Empile les champs verticalement */
+    align-items: center; /* Centre les champs */
+  }
+  .input-group {
+    width: 100%; /* Assure que chaque champ prend toute la largeur */
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    font-size: 14px; /* Taille de police ajustée */
+    padding: 7px;
+  }
+
+  .contact-form form textarea,
+  .contact-form form .full-width,
+  .contact-button {
+    grid-column: span 1;
+  }
+
+  .checkbox-group {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .contact {
     flex-direction: column;
     align-items: center;
@@ -142,15 +182,7 @@
     margin-bottom: 20px;
   }
   .contact-form form {
-    grid-template-columns: 1fr;
-  }
-  .contact-form form textarea,
-  .contact-form form .full-width,
-  .contact-button {
-    grid-column: span 1;
-  }
-  .checkbox-group {
-    justify-content: flex-start;
+    grid-template-columns: 1fr; /* Passe en une seule colonne */
   }
 
   .checkbox-group input {
@@ -159,5 +191,9 @@
 
   .checkbox-group label {
     margin-left: -10%;
+  }
+  .input-group select {
+    font-size: 14px;
+    padding: 8px;
   }
 }

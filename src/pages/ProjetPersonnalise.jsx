@@ -7,6 +7,7 @@ import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import projet1 from "../assets/projet1.jpg";
 import Pavdev from "../components/pavdev/Pavdev";
+import GalleryComponent from "../components/gallerycomponent/GalleryComponent";
 
 const ProjetPersonnalise = () => {
   return (
@@ -19,6 +20,9 @@ const ProjetPersonnalise = () => {
         titre=""
       />
       <Pavdev />
+      <div className="container">
+        <GalleryComponent />
+      </div>
       <Contact />
       <Footer />
     </div>

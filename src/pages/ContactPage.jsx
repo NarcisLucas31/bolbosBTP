@@ -12,7 +12,7 @@ const ContactPage = () => {
       <Avantnav />
       <Navbar />
       <Hero />
-      <Titre subTitre="Contactez nous" titre="Venez" />
+      <Titre subTitre="Contactez-nous" titre="" />
       <Contact />
       <Footer />
     </div>

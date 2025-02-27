@@ -54,7 +54,7 @@ const Avantnav = () => {
         )}
       </button>
       <Link to="/avis">
-        <button className="avantnav-button">Avis</button>
+        <button className="avantnav-button avis-button">Avis</button>
       </Link>
     </div>
   );

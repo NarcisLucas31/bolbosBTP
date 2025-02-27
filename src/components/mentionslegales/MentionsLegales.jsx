@@ -5,7 +5,7 @@ const MentionsLegales = () => {
   return (
     <div className="mentions-legales">
       <h1>
-        Mentions légales de BTPBolbos domiciliée 12 Grande rue, 02310
+        Mentions légales de Bolbos BTP domiciliée 12 Grande rue, 02310
         Nogent-l'Artaud
       </h1>
 

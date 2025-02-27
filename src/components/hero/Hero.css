@@ -87,39 +87,48 @@
   .hero {
     padding: 100px 10px;
     display: flex;
-    flex-direction: column; /* Aligne le contenu verticalement */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
   }
 
   .hero-content {
     text-align: center;
     align-items: center;
-  }
-
-  .hero-image {
-    align-items: center; /* Centre les images */
+    position: relative;
+    z-index: 2;
   }
 
   .main-image {
-    display: none; /* Cache l'image secondaire sur mobile */
+    display: none; /* On cache l'image principale sur mobile */
   }
 
   .secondary-image {
+    display: none; /* On cache l'image secondaire pour la remplacer par un background */
+  }
+
+  /* Pseudo-élément pour l'image de fond */
+  .hero::before {
+    content: "";
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* S'assure que l'image couvre tout l'écran sans déformation */
-    filter: brightness(0.7); /* Applique un effet sombre à l'image */
-    transform-origin: center; /* Définit le point central pour le dézoom */
+    background: url("../../assets/salonhero.jpg") center center/cover no-repeat;
+    filter: brightness(0.7);
+    z-index: 1;
   }
 
   .hero-overlay {
     padding: 15px 20px;
     max-width: 90%;
-    margin-top: 60px; /* Espace entre l'image et le texte */
-    text-align: center; /* Centre le texte */
+    margin-top: 60px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
   }
 
   .hero-overlay h1 {
@@ -133,6 +142,6 @@
   .contact-button {
     padding: 8px 15px;
     font-size: 0.9rem;
-    margin: 10px auto 0; /* Centre le bouton */
+    margin: 10px auto 0;
   }
 }

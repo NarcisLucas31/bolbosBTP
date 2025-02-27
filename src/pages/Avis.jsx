@@ -4,6 +4,7 @@ import Hero from "../components/hero/Hero";
 import Titre from "../components/titre/Titre";
 import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
+import AvisClients from "../components/avisclients/AvisClients";
 
 const Avis = () => {
   return (
@@ -13,9 +14,10 @@ const Avis = () => {
       <Hero />
       <div className="container">
         <Titre
-          subTitre="Tout votre aménagement, dedans comme dehors."
+          subTitre="Découvrez les avis des clients de Bolbos BTP"
           titre=""
         />
+        <AvisClients />
       </div>
       <Footer />
     </div>

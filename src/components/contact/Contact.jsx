@@ -13,7 +13,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     nom: "",
     prenom: "",
-    societe: "",
+    service: "",
     adresse: "",
     ville: "",
     code_postal: "",
@@ -22,7 +22,20 @@ const Contact = () => {
     message: "",
     accept: false,
   });
+
   const [result, setResult] = useState("");
+
+  const services = [
+    "Pose menuiserie extérieures",
+    "Dressing sur mesure",
+    "Cuisine sur mesure",
+    "Revêtement sol",
+    "Revêtement muraux",
+    "Salle de bain",
+    "Habillage sol",
+    "Abris / Terrasse",
+    "Projet personnalisé",
+  ]; // Remplace ces services par les tiens
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -33,11 +46,6 @@ const Contact = () => {
     event.preventDefault();
     setResult("Envoi en cours...");
 
-    const formDataObj = Object.keys(formData).reduce((acc, key) => {
-      acc[key] = formData[key];
-      return acc;
-    }, {});
-
     try {
       const response = await fetch("https://formspree.io/f/mdkadwea", {
         method: "POST",
@@ -45,16 +53,15 @@ const Contact = () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(formDataObj),
+        body: JSON.stringify(formData),
       });
-      console.log(await response.json());
 
       if (response.ok) {
         setResult("Formulaire envoyé avec succès !");
         setFormData({
           nom: "",
           prenom: "",
-          societe: "",
+          service: "",
           adresse: "",
           ville: "",
           code_postal: "",
@@ -86,7 +93,6 @@ const Contact = () => {
           {[
             "nom",
             "prenom",
-            "societe",
             "adresse",
             "ville",
             "code_postal",
@@ -99,7 +105,6 @@ const Contact = () => {
                   {
                     nom: user_icon,
                     prenom: user_icon,
-                    societe: company_icon,
                     adresse: address_icon,
                     ville: city_icon,
                     code_postal: postal_icon,
@@ -113,14 +118,42 @@ const Contact = () => {
                 type={field === "email" ? "email" : "text"}
                 name={field}
                 placeholder={`${field.replace("_", " ").toUpperCase()}${
-                  field === "societe" || field === "adresse" ? "" : " *"
+                  field === "prenom" || field === "email" || field === "adresse"
+                    ? ""
+                    : " *"
                 }`}
                 onChange={handleChange}
                 value={formData[field]}
-                required={field !== "societe" && field !== "adresse"}
+                required={
+                  !(
+                    field === "prenom" ||
+                    field === "email" ||
+                    field === "adresse"
+                  )
+                }
               />
             </div>
           ))}
+
+          {/* Sélecteur de service avec placeholder */}
+          <div className="input-group">
+            <img src={company_icon} alt="service" />
+            <select
+              name="service"
+              value={formData.service}
+              onChange={handleChange}
+              className={formData.service ? "" : "placeholder"}
+            >
+              <option value="" disabled hidden>
+                SERVICE *
+              </option>
+              {services.map((service, index) => (
+                <option key={index} value={service}>
+                  {service}
+                </option>
+              ))}
+            </select>
+          </div>
 
           <div className="input-group-msg">
             <img src={message_icon} alt="message" />

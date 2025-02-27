@@ -1,0 +1,72 @@
+/* Conteneur principal */
+.politique-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Titre principal */
+.politique-container h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.politique-container li {
+  margin: 10px 50px 10px;
+}
+
+/* Sous-titres */
+.politique-container h2 {
+  font-size: 1.5rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #96562e;
+  padding-bottom: 5px;
+}
+
+/* Paragraphes */
+.politique-container p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Liens */
+.politique-container a {
+  color: #b08467;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.politique-container a:hover {
+  color: #b08467;
+  text-decoration: underline;
+}
+
+/* Section */
+.politique-container section {
+  margin-bottom: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .politique-container {
+    padding: 15px;
+  }
+
+  .politique-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .politique-container h2 {
+    font-size: 1.3rem;
+  }
+
+  .politique-container p {
+    font-size: 0.9rem;
+  }
+}
