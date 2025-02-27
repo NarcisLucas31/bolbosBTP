@@ -28,7 +28,7 @@ const Apropo = () => {
           Personnalisez styles, tailles et couleurs, y compris en double teinte. Nos vitrages performants optimisent votre bien-être et 
           vos économies d’énergie. Installation rapide et finitions impeccables garanties. Transformez votre espace dès aujourd’hui !"
           linkText=""
-          linkHref="/menuiserie/menuiserieExt"
+          linkTo="/menuiserie/menuiserieExt"
         />
         <Imagegauchebtn
           imageSrc={Dressing1}
@@ -37,7 +37,7 @@ const Apropo = () => {
           matériaux de qualité et finitions soignées pour vous offrir un rangement fonctionnel, durable et élégant. Optez pour une solution 
           unique qui allie praticité et esthétique."
           linkText=""
-          linkHref="/menuiserie/dressing"
+          linkTo="/menuiserie/dressing"
         />
         <Doubleimagebtn
           imageSrc={Cuisine1}
@@ -46,7 +46,7 @@ const Apropo = () => {
           choix des matériaux et agencements pour un résultat harmonieux et fonctionnel. Alliant rapidité, qualité et finitions soignées, 
           nous garantissons une installation durable et élégante, parfaitement adaptée à votre style de vie."
           linkText=""
-          linkHref="/menuiserie/cuisine"
+          linkTo="/menuiserie/cuisine"
         />
       </div>
       <Footer />

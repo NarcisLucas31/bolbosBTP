@@ -29,7 +29,7 @@ const Services = () => {
           Optez pour la résistance du grès cérame, l’esthétique de la faïence ou le charme authentique de la terre cuite. Trouvez le sol parfait 
           pour sublimer votre intérieur !"
           linkText=""
-          linkHref="/travauxInt/revetementSol"
+          linkTo="/travauxInt/revetementSol"
         />
         <Imagegauchebtn
           imageSrc={Mur1}
@@ -40,7 +40,7 @@ const Services = () => {
           pièces humides. Pour une solution pratique et facile à entretenir, les revêtements en PVC offrent une protection durable et un 
           large choix de styles. Sublimez vos murs avec des finitions adaptées à vos envies !"
           linkText=""
-          linkHref="/travauxInt/revetementMurs"
+          linkTo="/travauxInt/revetementMurs"
         />
         <Doubleimagebtn
           imageSrc={Salledebain1}
@@ -49,7 +49,7 @@ const Services = () => {
           gamme, d’équipements modernes et d’un agencement optimisé pour allier confort et design. Nos installations soignées et rapides 
           garantissent un résultat impeccable, adapté à votre espace et à vos besoins."
           linkText=""
-          linkHref="/travauxInt/salleDeBain"
+          linkTo="/travauxInt/salleDeBain"
         />
       </div>
       <Footer />

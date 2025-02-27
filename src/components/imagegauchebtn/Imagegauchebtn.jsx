@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Imagegauchebtn.css";
 
-const Imagegauchebtn = ({ imageSrc, text, subTitre, linkHref, linkText }) => {
+const Imagegauchebtn = ({ imageSrc, text, subTitre, linkTo, linkText }) => {
   return (
     <div className="imagegauchebtn">
       <div className="imagegauchebtn-gauche">
@@ -11,10 +12,9 @@ const Imagegauchebtn = ({ imageSrc, text, subTitre, linkHref, linkText }) => {
       <div className="imagegauchebtn-droite">
         <h2>{subTitre}</h2>
         <p>{text}</p>
-        <a href={linkHref} className="imagegauchebtn-link">
-          {linkText}
-          Découvrir
-        </a>
+        <Link to={linkTo} className="imagegauchebtn-link">
+          {linkText} Découvrir
+        </Link>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ const TravauxExt = () => {
           économique, le gravier ou sable stabilisé assure un drainage efficace. Enfin, le gazon synthétique garantit une verdure impeccable 
           toute l’année sans entretien. Créez des espaces extérieurs esthétiques et fonctionnels !"
           linkText=""
-          linkHref="/travauxExt/habillageSol"
+          linkTo="/travauxExt/habillageSol"
         />
         <Imagegauchebtn
           imageSrc={AbrisTerraseImg}
@@ -39,7 +39,7 @@ const TravauxExt = () => {
           entre bois, composite ou carrelage, et bénéficiez d’une installation soignée et personnalisée. Profitez d’un extérieur harmonieux 
           et fonctionnel, pensé selon vos envies !"
           linkText=""
-          linkHref="/travauxExt/abrisTerrasse"
+          linkTo="/travauxExt/abrisTerrasse"
         />
         <Doubleimagebtn
           imageSrc={Projet1}
@@ -49,7 +49,7 @@ const TravauxExt = () => {
           les travaux en respectant vos délais et votre budget. Prêt à commencer ? Contactez-nous ou remplissez le formulaire pour démarrer dès 
           aujourd’hui !"
           linkText=""
-          linkHref="/travauxExt/projetPersonnalise"
+          linkTo="/travauxExt/projetPersonnalise"
         />
       </div>
       <Footer />
