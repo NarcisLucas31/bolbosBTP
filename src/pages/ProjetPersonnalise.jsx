@@ -20,10 +20,12 @@ const ProjetPersonnalise = () => {
         titre=""
       />
       <Pavdev />
+      <Titre subTitre="Contactez-nous" titre="" />
+      <Contact />
       <div className="container">
         <GalleryComponent />
       </div>
-      <Contact />
+      <Titre subTitre="" titre="" />
       <Footer />
     </div>
   );

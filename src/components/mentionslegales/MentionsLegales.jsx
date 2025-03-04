@@ -1,5 +1,6 @@
 import React from "react";
 import "./MentionsLegales.css";
+import { Link } from "react-router-dom";
 
 const MentionsLegales = () => {
   return (
@@ -43,9 +44,10 @@ const MentionsLegales = () => {
 
       <section>
         <h2>Conditions générales d'utilisation</h2>
+
         <p>
           Pour consulter nos conditions générales d'utilisation, veuillez
-          cliquer sur ce lien : <a href="/cgu">CGU</a>.
+          cliquer sur ce lien : <Link to="/CGU">CGU</Link>.
         </p>
       </section>
 
@@ -54,7 +56,7 @@ const MentionsLegales = () => {
         <p>
           Pour consulter notre politique de confidentialité, veuillez cliquer
           sur ce lien :{" "}
-          <a href="/confidentialite">Politique de confidentialité</a>.
+          <Link to="/confidentialite">Politique de confidentialité</Link>.
         </p>
       </section>
 

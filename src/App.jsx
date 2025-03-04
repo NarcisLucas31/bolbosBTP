@@ -18,11 +18,13 @@ import Contact from "./pages/ContactPage";
 import Avis from "./pages/Avis";
 import CGU from "./pages/CGU";
 import Confidentialite from "./pages/Confidentialite";
+import ScrollToTop from "./ScrollToTop";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route index element={<Accueil />} />
           <Route path="/" element={<Accueil />} />
