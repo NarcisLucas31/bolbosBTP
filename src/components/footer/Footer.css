@@ -20,11 +20,13 @@
   box-sizing: border-box; /* Gère mieux les marges internes */
 }
 
-/* Section de gauche (Renseignements utiles) */
 .footer-section {
   flex: 1;
-  margin: 10px; /* Espacement entre les sections */
-  min-width: 250px; /* Largeur minimale pour garder la structure */
+  margin: 10px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centre le contenu */
 }
 
 .footer-section h3 {

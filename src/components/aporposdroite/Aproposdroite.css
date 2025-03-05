@@ -17,7 +17,7 @@
 }
 .aproposdroite-img {
   width: 400px; /* Taille plus grande pour la largeur */
-  height: 250px; /* Taille plus grande pour la hauteur */
+  height: 300px; /* Taille plus grande pour la hauteur */
   object-fit: cover; /* Maintient un bon ratio tout en remplissant la zone */
   border-radius: 10px;
 }

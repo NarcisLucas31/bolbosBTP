@@ -1,0 +1,68 @@
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.white-box {
+  width: 100%;
+  height: 100px; /* Réduit pour une meilleure intégration */
+  background-color: transparent;
+}
+
+.contact-info {
+  background-color: #96562e; /* Marron qui correspond à la couleur de la barre de navigation */
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Léger effet d'ombre pour du relief */
+}
+
+.contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-details p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin: 15px 0;
+  color: #f4f4f4; /* Légèrement plus clair pour la lisibilité */
+}
+
+.contact-details img {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+  filter: brightness(1.2); /* Rend les icônes légèrement plus lumineuses */
+}
+@media screen and (max-width: 500px) {
+  .contact-info {
+    padding: 15px;
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .contact-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .contact-details p {
+    font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-details img {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+}

@@ -31,6 +31,12 @@ const Footer = () => {
             <button className="avantnav-button">Avis</button>
           </Link>
         </div>
+        <div className="footer-section">
+          <h3>Nous contacter :</h3>
+          <Link to="/contact">
+            <button className="avantnav-button">Contact</button>
+          </Link>
+        </div>
       </div>
       <div className="footer-legal">
         <p>

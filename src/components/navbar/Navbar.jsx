@@ -4,6 +4,7 @@ import logo from "../../assets/logo.png";
 import menu from "../../assets/menu.png";
 import scroll from "../../assets/scroll.png";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -30,6 +31,20 @@ const Navbar = () => {
       submenuRefs[menu].current?.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest(".submenu-container")) {
+        setVisibleMenu(null);
+        setRotatedMenu(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="container">

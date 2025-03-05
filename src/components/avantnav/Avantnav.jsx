@@ -4,7 +4,7 @@ import tel_img from "../../assets/tel.png";
 import { Link } from "react-router-dom";
 
 const Avantnav = () => {
-  const [contactText, setContactText] = useState("Contacter Nous");
+  const [contactText, setContactText] = useState("Appelez-Nous");
   const [isMobile, setIsMobile] = useState(false);
 
   // Détecte si l'utilisateur est sur un appareil mobile
@@ -24,7 +24,7 @@ const Avantnav = () => {
   const handleContactClick = () => {
     if (!isMobile) {
       setContactText((prevText) =>
-        prevText === "Contacter Nous" ? "06 50 07 52 40" : "Contacter Nous"
+        prevText === "Appelez-Nous" ? "06 50 07 52 40" : "Appelez-Nous"
       );
     }
   };
