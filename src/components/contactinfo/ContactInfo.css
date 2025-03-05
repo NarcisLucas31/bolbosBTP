@@ -16,6 +16,7 @@
   background-color: #96562e; /* Marron qui correspond à la couleur de la barre de navigation */
   color: #fff;
   padding: 30px;
+  border-radius: 8px; /* Légèrement moins arrondi pour un look plus moderne et aligné avec le design global */
   text-align: center;
   max-width: 600px;
   width: 90%;
