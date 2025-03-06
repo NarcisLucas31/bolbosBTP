@@ -26,7 +26,7 @@ const MenuiserieExt = () => {
           imageSrc={menuisExt2}
           text="Nous vous proposons une large gamme de fenêtres et de portes sur mesure, conçues pour s’adapter parfaitement à vos besoins 
           et à votre style de vie. Que ce soit en termes de forme, de style, de taille ou de couleur, nous avons une solution pour chaque projet. 
-          Grâce à nos partenariats avec des fournisseurs de renom, nous vous offrons une personnalisation complète, avec la possibilité de choisir 
+          Grâce à nos partenariats avec des fournisseurs de confiance, nous vous offrons une personnalisation complète, avec la possibilité de choisir 
           des fenêtres et portes avec double couleur : une couleur extérieure pour s'harmoniser avec l'architecture de votre maison, et une autre 
           couleur intérieure pour parfaitement s’intégrer à la décoration de votre intérieur. Cette option permet de créer une harmonie parfaite 
           entre votre extérieur et votre intérieur, tout en optimisant l’esthétique de chaque espace."

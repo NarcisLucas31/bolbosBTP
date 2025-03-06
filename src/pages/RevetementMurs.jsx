@@ -40,8 +40,8 @@ const RevetementMurs = () => {
         <Aproposdroite
           imageSrc={mur3}
           text="Le papier peint est parfait pour ajouter des motifs et des textures uniques à vos murs. Disponible dans une variété de styles, 
-          du classique au moderne, il permet de créer des ambiances personnalisées et élégantes. Facile à poser et à entretenir, il transforme 
-          instantanément l’atmosphère de votre intérieur."
+          du classique au moderne, il permet de créer des ambiances personnalisées et élégantes. Facile à entretenir, il transforme instantanément 
+          l'atmosphère de votre intérieur."
           titre="Papier peint : Personnalisez vos murs avec style"
         />
         <Apropos
@@ -64,8 +64,7 @@ const RevetementMurs = () => {
           imageSrc={mur6}
           text="Les revêtements en PVC sont idéaux pour les pièces humides grâce à leur résistance à l'humidité et leur facilité d'entretien. 
           Disponibles dans une large gamme de couleurs et de motifs, ils s’adaptent à tous les styles de décoration. Ces revêtements sont 
-          également durables, offrant une protection efficace tout en étant simples à nettoyer. Parfaits pour les cuisines, salles de bains ou 
-          couloirs, ils combinent fonctionnalité et esthétique."
+          également durables, offrant une protection efficace tout en étant simples à nettoyer."
           titre="Revêtements en PVC : Praticité et esthétique"
         />
       </div>

@@ -1,0 +1,46 @@
+.titre-hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+.titre-hero-content {
+  background-color: #96562e; /* Marron qui correspond à la couleur de la barre de navigation */
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px; /* Légèrement moins arrondi pour un look plus moderne et aligné avec le design global */
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Léger effet d'ombre pour du relief */
+}
+
+.titre-hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.titre-hero-content h2 {
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: #f4f4f4;
+}
+
+/* Media query pour écrans de 500px et moins */
+@media screen and (max-width: 500px) {
+  .titre-hero-content {
+    padding: 20px 15px;
+    width: 95%;
+    margin: 0 10px;
+  }
+
+  .titre-hero-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .titre-hero-content h2 {
+    font-size: 1rem;
+  }
+}

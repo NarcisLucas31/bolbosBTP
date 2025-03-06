@@ -9,7 +9,6 @@ import projet6 from "../../assets/projet6.jpg";
 import projet7 from "../../assets/projet7.jpg";
 import projet8 from "../../assets/projet8.jpg";
 import projet9 from "../../assets/projet9.jpg";
-import projet10 from "../../assets/projet10.jpg";
 
 const images = [
   projet2,
@@ -20,7 +19,6 @@ const images = [
   projet7,
   projet8,
   projet9,
-  projet10,
 ];
 
 const GalleryComponent = () => {

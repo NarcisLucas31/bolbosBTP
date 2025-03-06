@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../components/navbar/Navbar";
-import Hero from "../components/hero/Hero";
-import Titre from "../components/titre/Titre";
+import TitreHero from "../components/titrehero/TitreHero";
 import Footer from "../components/footer/Footer";
 import Doubleimagebtn from "../components/doubleimagebtn/Doubleimagebtn";
 import Imagegauchebtn from "../components/imagegauchebtn/Imagegauchebtn";
@@ -10,17 +9,13 @@ import MenuiserieExt1 from "../assets/menuisExt1.jpg";
 import Dressing1 from "../assets/dressing1.jpg";
 import Cuisine1 from "../assets/cuisine1.webp";
 
-const Apropo = () => {
+const Menuiserie = () => {
   return (
     <div>
       <Avantnav />
       <Navbar />
-      <Hero />
+      <TitreHero titre="Menuiserie" sousTitre="" />
       <div className="container">
-        <Titre
-          subTitre="Tout votre aménagement, dedans comme dehors."
-          titre=""
-        />
         <Doubleimagebtn
           imageSrc={MenuiserieExt1}
           subTitre="Pose menuiserie extérieures"
@@ -54,4 +49,4 @@ const Apropo = () => {
   );
 };
 
-export default Apropo;
+export default Menuiserie;
