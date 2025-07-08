@@ -5,7 +5,7 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
-import projet1 from "../assets/projet1.jpg";
+import projet1 from "../assets/projet1.webp";
 import Pavdev from "../components/pavdev/Pavdev";
 import GalleryComponent from "../components/gallerycomponent/GalleryComponent";
 

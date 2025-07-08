@@ -4,10 +4,10 @@ import Footer from "../components/footer/Footer";
 import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import cuisine1 from "../assets/cuisine1.webp";
-import cuisine2 from "../assets/cuisine2.jpeg";
-import cuisine3 from "../assets/cuisine3.jpg";
-import bois from "../assets/bois.jpeg";
-import feuille from "../assets/feuille.jpeg";
+import cuisine2 from "../assets/cuisine2.webp";
+import cuisine3 from "../assets/cuisine3.webp";
+import bois from "../assets/bois.webp";
+import feuille from "../assets/feuille.webp";
 import Imageback from "../components/imageback/Imageback";
 
 const Cuisine = () => {

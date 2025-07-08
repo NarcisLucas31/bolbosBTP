@@ -2,8 +2,8 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Services.css";
 import menuiserie from "../../assets/menuiserie.webp";
-import interieur from "../../assets/interieur.avif";
-import exterieur from "../../assets/exterieur.jpg";
+import interieur from "../../assets/interieur.webp";
+import exterieur from "../../assets/exterieur.webp";
 
 const Services = () => {
   return (

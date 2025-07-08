@@ -1,14 +1,14 @@
 import { useState } from "react";
 import React from "react";
 import "./GalleryComponent.css";
-import projet2 from "../../assets/projet2.jpg";
-import projet3 from "../../assets/projet3.jpg";
-import projet4 from "../../assets/projet4.jpg";
-import projet5 from "../../assets/projet5.jpg";
-import projet6 from "../../assets/projet6.jpg";
-import projet7 from "../../assets/projet7.jpg";
-import projet8 from "../../assets/projet8.jpg";
-import projet9 from "../../assets/projet9.jpg";
+import projet2 from "../../assets/projet2.webp";
+import projet3 from "../../assets/projet3.webp";
+import projet4 from "../../assets/projet4.webp";
+import projet5 from "../../assets/projet5.webp";
+import projet6 from "../../assets/projet6.webp";
+import projet7 from "../../assets/projet7.webp";
+import projet8 from "../../assets/projet8.webp";
+import projet9 from "../../assets/projet9.webp";
 
 const images = [
   projet2,

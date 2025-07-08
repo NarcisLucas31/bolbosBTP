@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Avantnav.css";
-import tel_img from "../../assets/tel.png";
+import tel_img from "../../assets/tel.webp";
 import { Link } from "react-router-dom";
 
 const Avantnav = () => {

@@ -6,13 +6,13 @@ import Apropos from "../components/apropos/Apropos";
 import Aproposdroite from "../components/aporposdroite/Aproposdroite";
 import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
-import parquet1 from "../assets/parquet1.jpg";
-import parquet2 from "../assets/parquet2.jpg";
-import parquet3 from "../assets/parquet3.avif";
-import parquet4 from "../assets/parquet4.avif";
-import parquet5 from "../assets/parquet5.jpg";
-import parquet6 from "../assets/parquet6.jpg";
-import parquet7 from "../assets/parquet7.jpg";
+import parquet1 from "../assets/parquet1.webp";
+import parquet2 from "../assets/parquet2.webp";
+import parquet3 from "../assets/parquet3.webp";
+import parquet4 from "../assets/parquet4.webp";
+import parquet5 from "../assets/parquet5.webp";
+import parquet6 from "../assets/parquet6.webp";
+import parquet7 from "../assets/parquet7.webp";
 
 const RevetementSol = () => {
   return (

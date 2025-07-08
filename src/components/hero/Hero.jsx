@@ -1,8 +1,8 @@
 // Hero.js
 import React from "react";
 import "./Hero.css";
-import bois from "../../assets/bois.jpeg";
-import salonhero from "../../assets/salonhero.jpg";
+import bois from "../../assets/bois.webp";
+import salonhero from "../../assets/salonhero.webp";
 import { Link } from "react-router-dom";
 
 const Hero = () => {

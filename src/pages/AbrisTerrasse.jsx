@@ -4,8 +4,8 @@ import Avantnav from "../components/avantnav/Avantnav";
 import Navbar from "../components/navbar/Navbar";
 import abrisTerraseImg from "../assets/abrisTerraseImg.webp";
 import Apropos from "../components/apropos/Apropos";
-import aproposAbris from "../assets/aproposAbris.jpg";
-import aproposTerrasse from "../assets/aproposTerrasse.jpg";
+import aproposAbris from "../assets/aproposAbris.webp";
+import aproposTerrasse from "../assets/aproposTerrasse.webp";
 
 const AbrisTerrasse = () => {
   return (

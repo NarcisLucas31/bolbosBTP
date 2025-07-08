@@ -5,8 +5,8 @@ import Footer from "../components/footer/Footer";
 import Doubleimagebtn from "../components/doubleimagebtn/Doubleimagebtn";
 import Imagegauchebtn from "../components/imagegauchebtn/Imagegauchebtn";
 import Avantnav from "../components/avantnav/Avantnav";
-import Parquet1 from "../assets/parquet1.jpg";
-import Mur1 from "../assets/mur1.jpg";
+import Parquet1 from "../assets/parquet1.webp";
+import Mur1 from "../assets/mur1.webp";
 import Salledebain1 from "../assets/salledebain1.webp";
 
 const TravauxInt = () => {

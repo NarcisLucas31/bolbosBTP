@@ -1,8 +1,8 @@
 import React from "react";
 import "./ContactInfo.css";
-import tel_img from "../../assets/tel.png";
-import mail_img from "../../assets/mail.png";
-import adresse_img from "../../assets/adresse.png";
+import tel_img from "../../assets/tel.webp";
+import mail_img from "../../assets/mail.webp";
+import adresse_img from "../../assets/adresse.webp";
 
 const ContactInfo = () => {
   return (

@@ -8,9 +8,9 @@ import Footer from "../components/footer/Footer";
 import Doubleimage from "../components/doubleimage/Doubleimage";
 import Imagegauche from "../components/imagegauche/Imagegauche";
 import Avantnav from "../components/avantnav/Avantnav";
-import accueil1 from "../assets/accueil1.jpg";
+import accueil1 from "../assets/accueil1.webp";
 import accueil2 from "../assets/accueil2.webp";
-import accueil3 from "../assets/accueil3.jpg";
+import accueil3 from "../assets/accueil3.webp";
 
 const Accueil = () => {
   return (

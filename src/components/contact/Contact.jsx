@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import "./Contact.css";
-import user_icon from "../../assets/user_icon.png";
-import company_icon from "../../assets/company_icon.png";
-import address_icon from "../../assets/address_icon.png";
-import city_icon from "../../assets/city_icon.png";
-import postal_icon from "../../assets/postal_icon.png";
-import phone_icon from "../../assets/phone_icon.png";
-import email_icon from "../../assets/email_icon.png";
-import message_icon from "../../assets/message_icon.png";
+import user_icon from "../../assets/user_icon.webp";
+import company_icon from "../../assets/company_icon.webp";
+import address_icon from "../../assets/address_icon.webp";
+import city_icon from "../../assets/city_icon.webp";
+import postal_icon from "../../assets/postal_icon.webp";
+import phone_icon from "../../assets/phone_icon.webp";
+import email_icon from "../../assets/email_icon.webp";
+import message_icon from "../../assets/message_icon.webp";
 
 const Contact = () => {
   const [formData, setFormData] = useState({

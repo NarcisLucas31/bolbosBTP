@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
-import menu from "../../assets/menu.png";
-import scroll from "../../assets/scroll.png";
+import logo from "../../assets/logo.webp";
+import menu from "../../assets/menu.webp";
+import scroll from "../../assets/scroll.webp";
 import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 

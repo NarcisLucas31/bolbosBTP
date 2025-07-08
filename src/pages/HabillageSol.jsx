@@ -6,13 +6,13 @@ import Aproposdroite from "../components/aporposdroite/Aproposdroite";
 import Avantnav from "../components/avantnav/Avantnav";
 import abrisTerraseImg from "../assets/abrisTerraseImg.webp";
 import Heroback from "../components/heroback/Heroback";
-import carrelage1 from "../assets/carrelage1.jpg";
-import carrelage2 from "../assets/carrelage2.jpg";
-import carrelage3 from "../assets/carrelage3.jpg";
-import carrelage4 from "../assets/carrelage4.jpg";
-import sol1 from "../assets/sol1.jpg";
-import sol2 from "../assets/sol2.jpg";
-import sol3 from "../assets/sol3.jpg";
+import carrelage1 from "../assets/carrelage1.webp";
+import carrelage2 from "../assets/carrelage2.webp";
+import carrelage3 from "../assets/carrelage3.webp";
+import carrelage4 from "../assets/carrelage4.webp";
+import sol1 from "../assets/sol1.webp";
+import sol2 from "../assets/sol2.webp";
+import sol3 from "../assets/sol3.webp";
 import sol4 from "../assets/sol4.webp";
 
 const HabillageSol = () => {

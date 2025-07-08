@@ -6,12 +6,12 @@ import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import Apropos from "../components/apropos/Apropos";
 import Aproposdroite from "../components/aporposdroite/Aproposdroite";
-import mur1 from "../assets/mur1.jpg";
+import mur1 from "../assets/mur1.webp";
 import mur2 from "../assets/mur2.webp";
-import mur3 from "../assets/mur3.jpg";
-import mur4 from "../assets/mur4.jpg";
-import mur5 from "../assets/mur5.avif";
-import mur6 from "../assets/mur6.avif";
+import mur3 from "../assets/mur3.webp";
+import mur4 from "../assets/mur4.webp";
+import mur5 from "../assets/mur5.webp";
+import mur6 from "../assets/mur6.webp";
 
 const RevetementMurs = () => {
   return (

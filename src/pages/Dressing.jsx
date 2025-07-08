@@ -5,9 +5,9 @@ import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import Imagemid from "../components/imagemid/Imagemid";
 import Apropos from "../components/apropos/Apropos";
-import dressing1 from "../assets/dressing1.jpg";
-import dressing2 from "../assets/dressing2.jpg";
-import dressing3 from "../assets/dressing3.jpg";
+import dressing1 from "../assets/dressing1.webp";
+import dressing2 from "../assets/dressing2.webp";
+import dressing3 from "../assets/dressing3.webp";
 
 const Dressing = () => {
   return (

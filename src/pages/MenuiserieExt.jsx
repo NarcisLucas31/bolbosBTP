@@ -5,10 +5,10 @@ import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import Aproposdroite from "../components/aporposdroite/Aproposdroite";
 import Apropos from "../components/apropos/Apropos";
-import menuisExt1 from "../assets/menuisExt1.jpg";
-import menuisExt2 from "../assets/menuisExt2.jpg";
+import menuisExt1 from "../assets/menuisExt1.webp";
+import menuisExt2 from "../assets/menuisExt2.webp";
 import menuisExt3 from "../assets/menuisExt3.webp";
-import menuisExt4 from "../assets/menuisExt4.png";
+import menuisExt4 from "../assets/menuisExt4.webp";
 import menuisExt5 from "../assets/menuisExt5.webp";
 
 const MenuiserieExt = () => {

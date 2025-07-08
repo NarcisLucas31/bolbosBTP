@@ -5,8 +5,8 @@ import Footer from "../components/footer/Footer";
 import Doubleimagebtn from "../components/doubleimagebtn/Doubleimagebtn";
 import Imagegauchebtn from "../components/imagegauchebtn/Imagegauchebtn";
 import Avantnav from "../components/avantnav/Avantnav";
-import MenuiserieExt1 from "../assets/menuisExt1.jpg";
-import Dressing1 from "../assets/dressing1.jpg";
+import MenuiserieExt1 from "../assets/menuisExt1.webp";
+import Dressing1 from "../assets/dressing1.webp";
 import Cuisine1 from "../assets/cuisine1.webp";
 
 const Menuiserie = () => {

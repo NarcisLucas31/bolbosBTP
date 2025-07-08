@@ -7,8 +7,8 @@ import Avantnav from "../components/avantnav/Avantnav";
 import Heroback from "../components/heroback/Heroback";
 import salledebain1 from "../assets/salledebain1.webp";
 import salledebain2 from "../assets/salledebain2.webp";
-import salledebain3 from "../assets/salledebain3.jpg";
-import salledebain4 from "../assets/salledebain4.jpg";
+import salledebain3 from "../assets/salledebain3.webp";
+import salledebain4 from "../assets/salledebain4.webp";
 
 const SalleDeBain = () => {
   return (
